@@ -1,0 +1,132 @@
+.trusted-by {
+    padding: 80px 0;
+    background: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-medium);
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    background: var(--bg-section);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    animation: fadeInUp 0.6s ease-out both;
+    min-width: 150px;
+}
+
+.logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+    background: var(--bg-white);
+}
+
+.logo-icon-wrapper {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    stroke-width: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-item:hover .logo-icon {
+    transform: scale(1.15) rotate(5deg) translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2d2d2d 0%, #5a5a5a 100%);
+}
+
+.logo-item:hover .logo-icon::before {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-name {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.logo-item:hover .logo-name {
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,23 @@
+.contact-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contact-content {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+@media (max-width: 968px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
