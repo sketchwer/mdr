@@ -41,9 +41,9 @@ const TeamSection = () => {
                                 <img src={member.image} alt={member.name} className="team-image" />
                                 <div className="team-overlay">
                                     <div className="team-social">
-                                        <a href="#">📘</a>
-                                        <a href="#">🐦</a>
-                                        <a href="#">💼</a>
+                                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘</a>
+                                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦</a>
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">💼</a>
                                     </div>
                                 </div>
                             </div>

@@ -7,27 +7,28 @@ const StatsSection = () => {
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && !hasAnimated) {
-                        setHasAnimated(true);
-                        animateCounters();
-                    }
-                });
-            },
-            { threshold: 0.5 }
-        );
+        const currentRef = sectionRef.current;
+        if (currentRef) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting && !hasAnimated) {
+                            setHasAnimated(true);
+                            animateCounters();
+                        }
+                    });
+                },
+                { threshold: 0.5 }
+            );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+            observer.observe(currentRef);
+
+            return () => {
+                if (currentRef) {
+                    observer.unobserve(currentRef);
+                }
+            };
         }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-        };
     }, [hasAnimated]);
 
     const animateCounters = () => {

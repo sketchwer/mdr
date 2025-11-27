@@ -127,7 +127,7 @@ const Projects = () => {
                                 <div className="project-overlay">
                                     <span className="project-tag">{project.tag}</span>
                                     <div className="project-hover-content">
-                                        <a href="#" className="project-view-btn">
+                                        <a href="/projects" className="project-view-btn">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="white" strokeWidth="2"/>
                                                 <path d="M2.458 12C3.732 7.943 7.523 5 12 5C16.478 5 20.268 7.943 21.542 12C20.268 16.057 16.478 19 12 19C7.523 19 3.732 16.057 2.458 12Z" stroke="white" strokeWidth="2"/>
@@ -140,7 +140,7 @@ const Projects = () => {
                             <div className="project-content">
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
-                                <a href="#" className="project-link">
+                                <a href="/projects" className="project-link">
                                     <span>View Project</span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
