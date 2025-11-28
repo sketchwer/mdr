@@ -1,0 +1,160 @@
+.zoho-help-section {
+    background: #ffffff;
+}
+
+.section-header {
+    background: #dc2626;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.zoho-products-list {
+    padding: 0;
+}
+
+.zoho-product-item {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.zoho-product-item:nth-child(even) {
+    background: #f8fafc;
+}
+
+.product-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.zoho-product-item.reverse .product-content-wrapper {
+    direction: rtl;
+}
+
+.zoho-product-item.reverse .product-text,
+.zoho-product-item.reverse .product-image-wrapper {
+    direction: ltr;
+}
+
+.product-text {
+    max-width: 100%;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.product-description {
+    font-size: 1.125rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.product-features li {
+    font-size: 1rem;
+    color: #334155;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.product-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.product-cta {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 24px;
+}
+
+.product-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-container {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .product-content-wrapper {
+        gap: 40px;
+    }
+    
+    .product-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        padding: 30px 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .zoho-product-item {
+        padding: 60px 0;
+    }
+    
+    .product-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .zoho-product-item.reverse .product-content-wrapper {
+        direction: ltr;
+    }
+    
+    .product-title {
+        font-size: 1.75rem;
+    }
+    
+    .product-description {
+        font-size: 1rem;
+    }
+}
+

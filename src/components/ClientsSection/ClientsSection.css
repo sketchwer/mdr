@@ -1,0 +1,140 @@
+.clients-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.clients-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #ff6b35;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.client-card {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 32px 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.client-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #dc2626 0%, #ff6b35 100%);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+}
+
+.client-card:hover {
+    border-color: #dc2626;
+    box-shadow: 0 12px 40px rgba(220, 38, 38, 0.2);
+    transform: translateY(-8px);
+    background: #ffffff;
+}
+
+.client-card:hover::before {
+    transform: scaleX(1);
+}
+
+.client-logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #dc2626;
+    margin-bottom: 16px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    transition: all 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+    transform: scale(1.1);
+    color: #ff6b35;
+}
+
+.client-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #334155;
+    transition: color 0.3s ease;
+}
+
+.client-card:hover .client-name {
+    color: #1a1a1a;
+}
+
+@media (max-width: 1200px) {
+    .clients-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    
+    .client-card {
+        padding: 24px 16px;
+    }
+    
+    .client-logo {
+        font-size: 2.5rem;
+        height: 60px;
+        margin-bottom: 12px;
+    }
+    
+    .client-name {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

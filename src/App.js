@@ -9,6 +9,8 @@ import CaseStudiesPage from './pages/CaseStudies/CaseStudies';
 import IndustriesPage from './pages/Industries/Industries';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Blog from './pages/Blog/Blog';
+import Careers from './pages/Careers/Careers';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 
@@ -26,6 +28,8 @@ function App() {
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
         <Footer />
       </div>
