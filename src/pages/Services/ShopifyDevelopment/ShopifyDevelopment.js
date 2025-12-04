@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PageHeader from '../../../components/PageHeader/PageHeader';
 import ClientsSection from '../../../components/ClientsSection/ClientsSection';
 import Testimonials from '../../../components/Testimonials/Testimonials';
 import CTA from '../../../components/CTA/CTA';
