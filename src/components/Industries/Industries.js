@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Industries.css';
 
 const Industries = () => {
@@ -83,28 +84,51 @@ const Industries = () => {
                 <h2 className="section-title">Industries We Serve</h2>
                 <p className="section-description">Serving our clients across diverse industries</p>
                 <div className="industries-grid">
-                    {industries.map((industry, index) => (
-                        <div 
-                            key={index} 
-                            className="industry-card"
-                            style={{ animationDelay: `${index * 0.1}s` }}
-                        >
-                            <div className="industry-image-wrapper">
-                                <img 
-                                    src={industry.image} 
-                                    alt={industry.title}
-                                    className="industry-image"
-                                    loading="lazy"
-                                />
-                                <div className="industry-overlay"></div>
-                                <div className="industry-icon">{industry.icon}</div>
-                            </div>
-                            <div className="industry-content">
-                                <h3>{industry.title}</h3>
-                                <p>{industry.description}</p>
-                            </div>
-                        </div>
-                    ))}
+                    {industries.map((industry, index) => {
+                        const industryRoutes = {
+                            'Tiles': '/industries/tiles',
+                            'Furniture': '/industries/furniture',
+                            'Fashion': '/industries/fashion',
+                            'Jewellery': '/industries/jewellery',
+                            'Healthcare': '/industries/healthcare',
+                            'Education': '/industries/education',
+                            'Architecture': '/industries/architecture',
+                            'Real Estate': '/industries/real-estate',
+                            'Travel': '/industries/travel',
+                            'Event Management': '/industries/event-management',
+                            'Groceries': '/industries/groceries',
+                            'Beauty & Care': '/industries/beauty-care'
+                        };
+                        const route = industryRoutes[industry.title] || '/industries';
+                        
+                        return (
+                            <Link 
+                                key={index} 
+                                to={route}
+                                className="industry-card-link"
+                            >
+                                <div 
+                                    className="industry-card"
+                                    style={{ animationDelay: `${index * 0.1}s` }}
+                                >
+                                    <div className="industry-image-wrapper">
+                                        <img 
+                                            src={industry.image} 
+                                            alt={industry.title}
+                                            className="industry-image"
+                                            loading="lazy"
+                                        />
+                                        <div className="industry-overlay"></div>
+                                    </div>
+                                    <div className="industry-content">
+                                        <h3>{industry.title}</h3>
+                                        <p>{industry.description}</p>
+                                        <span className="industry-view-more">Learn More →</span>
+                                    </div>
+                                </div>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </section>

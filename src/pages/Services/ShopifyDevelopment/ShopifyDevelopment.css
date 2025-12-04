@@ -1,0 +1,575 @@
+.shopify-development-page {
+    padding-top: 80px;
+}
+
+/* Hero Section */
+.shopify-hero {
+    background: var(--bg-gradient-hero);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shopify-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(220,38,38,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.shopify-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.breadcrumb {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.shopify-hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shopify-hero-description {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    font-size: 1.1rem;
+    padding: 18px 40px;
+}
+
+/* Main Features Section */
+.shopify-features-main {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.section-title-main {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 80px;
+    color: var(--text-dark);
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.feature-block.reverse {
+    direction: rtl;
+}
+
+.feature-block.reverse > * {
+    direction: ltr;
+}
+
+.feature-content {
+    padding: 20px;
+}
+
+.feature-icon-large {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-gradient);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-title-large {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.feature-description-large {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.feature-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-link:hover {
+    gap: 12px;
+    color: var(--primary-dark);
+}
+
+.feature-image {
+    position: relative;
+}
+
+.feature-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.feature-img:hover {
+    transform: scale(1.05);
+}
+
+/* Services List Section */
+.shopify-services-list {
+    padding: 100px 0;
+    background: var(--bg-section);
+}
+
+.services-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.service-item-detailed {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.service-item-detailed:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.service-icon-box {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-gradient-light);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    border: 2px solid var(--border-color);
+}
+
+.service-item-detailed h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.service-item-detailed p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+/* Workflow Section */
+.shopify-workflow {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.workflow-step {
+    text-align: center;
+    padding: 30px;
+    background: var(--bg-light);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    background: var(--bg-white);
+}
+
+.workflow-number {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-gradient);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 auto 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.workflow-step h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.workflow-step p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+/* Industry Section */
+.shopify-industries {
+    padding: 100px 0;
+    background: var(--bg-section);
+}
+
+.industry-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.industry-card {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.industry-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-gradient);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-md);
+}
+
+.industry-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.industry-card > p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin-bottom: 25px;
+}
+
+.industry-sectors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.sector-tag {
+    padding: 8px 16px;
+    background: var(--bg-light);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    border: 1px solid var(--border-color);
+}
+
+.industry-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.industry-link:hover {
+    gap: 12px;
+    color: var(--primary-dark);
+}
+
+/* Case Studies Section */
+.shopify-case-studies {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.case-studies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.view-all-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+    gap: 8px;
+    color: var(--primary-dark);
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.case-study-card-shopify {
+    background: var(--bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.case-study-card-shopify:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.case-study-image-shopify {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-study-image-shopify img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.case-study-card-shopify:hover .case-study-image-shopify img {
+    transform: scale(1.1);
+}
+
+.case-study-content-shopify {
+    padding: 30px;
+}
+
+.case-study-content-shopify h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.case-study-content-shopify p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.case-study-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.case-study-link:hover {
+    gap: 12px;
+    color: var(--primary-dark);
+}
+
+/* FAQ Section */
+.shopify-faq {
+    padding: 100px 0;
+    background: var(--bg-section);
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.faq-item {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.faq-question {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.faq-answer {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+}
+
+/* Final CTA Section */
+.shopify-cta-final {
+    padding: 100px 0;
+    background: var(--bg-gradient);
+    text-align: center;
+    color: white;
+}
+
+.cta-title-final {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: white;
+    line-height: 1.3;
+}
+
+.cta-button-large {
+    font-size: 1.2rem;
+    padding: 20px 50px;
+    background: white;
+    color: var(--primary-color);
+}
+
+.cta-button-large:hover {
+    background: var(--bg-light);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .feature-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .feature-block.reverse {
+        direction: ltr;
+    }
+
+    .feature-img {
+        height: 300px;
+    }
+
+    .services-grid-detailed {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-steps {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .shopify-hero {
+        padding: 100px 0 60px;
+    }
+
+    .shopify-features-main,
+    .shopify-services-list,
+    .shopify-workflow {
+        padding: 60px 0;
+    }
+
+    .feature-title-large {
+        font-size: 2rem;
+    }
+
+    .feature-description-large {
+        font-size: 1rem;
+    }
+
+    .workflow-steps {
+        grid-template-columns: 1fr;
+    }
+}
+

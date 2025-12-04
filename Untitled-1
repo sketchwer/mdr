@@ -1,0 +1,196 @@
+import { useEffect, useState, useRef, useCallback } from "react";
+import { io, Socket } from "socket.io-client";
+
+export const useVoiceSocket = () => {
+  const [socket, setSocket] = useState<Socket | null>(null);
+  const [voiceText, setVoiceText] = useState("");
+  const [voiceResponse, setVoiceResponse] = useState<any>(null);
+  const [isListening, setIsListening] = useState(false);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const lastUpdateRef = useRef(0);
+
+  useEffect(() => {
+    // 🎯 Optimized socket connection for low latency
+    const s = io("http://192.168.18.41:5001", {
+      transports: ["websocket"],
+      upgrade: true,
+      rememberUpgrade: true,
+      // ⚡ Lower latency settings
+      reconnection: true,
+      reconnectionDelay: 100,
+      reconnectionDelayMax: 500,
+      timeout: 20000,
+      // 🔊 Better audio streaming
+      forceNew: false,
+      // 📡 Real-time priority
+      autoConnect: true,
+    });
+
+    setSocket(s);
+
+    s.on("connect", () => {
+      console.log("🔗 Connected to Voice Socket");
+      setIsListening(true);
+      
+      // 🎤 Request high-quality audio settings from server
+      s.emit("audio_config", {
+        sampleRate: 16000, // Standard for voice recognition
+        channels: 1, // Mono for voice
+        bufferSize: 4096, // Smaller buffer = lower latency
+        enableVAD: true, // Voice Activity Detection
+        sensitivity: "high", // High sensitivity like Alexa
+      });
+    });
+
+    // ⚡ Reduced noise words - only truly meaningless sounds
+    const noiseWords = [
+      "ah", "haan", "hmm", "huh", "hmm?", "hmm.", "hmm..",
+      "who", "yo", "hmmmmm", "hmmhmm"
+    ];
+
+    // 🎤 User voice text - More sensitive detection
+    s.on("voice_text", (data) => {
+      const msg = data.text?.trim()?.toLowerCase();
+      const now = Date.now();
+
+      console.log("🎤 User said:", msg);
+
+      // ✅ More lenient filtering - accept shorter words (like Alexa)
+      // Only filter if it's truly noise AND very short
+      if (!msg) {
+        return;
+      }
+
+      // 🎯 Accept words of 2+ characters (more sensitive)
+      // Only ignore if it's a known noise word
+      if (msg.length < 2 || (msg.length < 3 && noiseWords.includes(msg))) {
+        console.log("🔇 Ignored noise voice input");
+        return;
+      }
+
+      // ⚡ Throttle updates for smoother UI (max 10 updates per second)
+      if (now - lastUpdateRef.current < 100) {
+        return;
+      }
+      lastUpdateRef.current = now;
+
+      // 🎯 Update state smoothly
+      setVoiceText(msg);
+    });
+
+    // 🤖 AI response - Smoother handling
+    s.on("voice_response", (data) => {
+      // If backend returns UNKNOWN, suppress it for noise messages
+      if (data.type === "UNKNOWN" && data.say?.includes("Sorry")) {
+        console.log("🛑 Suppressed UNKNOWN response (noise)");
+        return;
+      }
+
+      console.log("🤖 AI response:", data);
+      
+      // 🎯 Smooth state update
+      setVoiceResponse(data);
+
+      // 🔊 If there's audio data, play it smoothly
+      if (data.audioUrl || data.audio) {
+        playAudioSmoothly(data.audioUrl || data.audio);
+      }
+    });
+
+    // 📡 Real-time audio stream (if server supports it)
+    s.on("audio_stream", (data) => {
+      handleAudioStream(data);
+    });
+
+    // 🔄 Connection status
+    s.on("disconnect", () => {
+      console.log("❌ Socket disconnected");
+      setIsListening(false);
+    });
+
+    s.on("connect_error", (error) => {
+      console.error("❌ Connection error:", error);
+      setIsListening(false);
+    });
+
+    return () => {
+      s.disconnect();
+      if (audioContextRef.current) {
+        audioContextRef.current.close();
+      }
+    };
+  }, []);
+
+  // 🔊 Smooth audio playback function
+  const playAudioSmoothly = useCallback((audioSource: string | ArrayBuffer) => {
+    try {
+      const audio = new Audio();
+      
+      // 🎯 Smooth audio settings
+      audio.crossOrigin = "anonymous";
+      audio.preload = "auto";
+      
+      // ⚡ Lower latency
+      audio.playbackRate = 1.0;
+      
+      if (typeof audioSource === "string") {
+        audio.src = audioSource;
+      } else {
+        const blob = new Blob([audioSource], { type: "audio/wav" });
+        audio.src = URL.createObjectURL(blob);
+      }
+
+      audio.play().catch((err) => {
+        console.error("Audio play error:", err);
+      });
+
+      // Cleanup
+      audio.onended = () => {
+        if (audio.src.startsWith("blob:")) {
+          URL.revokeObjectURL(audio.src);
+        }
+      };
+    } catch (error) {
+      console.error("Audio playback error:", error);
+    }
+  }, []);
+
+  // 📡 Handle real-time audio stream
+  const handleAudioStream = useCallback((data: any) => {
+    if (!audioContextRef.current) {
+      audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
+    }
+
+    // Process audio chunks for smooth playback
+    // This would need to be implemented based on your server's audio format
+    console.log("📡 Received audio stream chunk");
+  }, []);
+
+  // 🎤 Request server to increase sensitivity
+  const requestHighSensitivity = useCallback(() => {
+    if (socket) {
+      socket.emit("sensitivity_config", {
+        level: "high", // Like Alexa
+        minVolume: 0.01, // Very low threshold
+        vadThreshold: 0.3, // Voice Activity Detection threshold
+        enableContinuousListening: true,
+      });
+    }
+  }, [socket]);
+
+  // Auto-request high sensitivity on mount
+  useEffect(() => {
+    if (socket?.connected) {
+      requestHighSensitivity();
+    }
+  }, [socket, requestHighSensitivity]);
+
+  return { 
+    voiceText, 
+    voiceResponse, 
+    socket, 
+    isListening,
+    requestHighSensitivity 
+  };
+};
+

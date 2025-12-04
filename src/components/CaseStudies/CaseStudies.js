@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './CaseStudies.css';
 
 const CaseStudies = () => {
@@ -132,38 +133,56 @@ const CaseStudies = () => {
 
                 {/* Case Studies Grid */}
                 <div className="case-studies-grid">
-                    {filteredStudies.map((study, index) => (
-                        <div 
-                            key={study.id} 
-                            className="case-study-card"
-                        >
-                            <div className="case-study-image-wrapper">
-                                <img 
-                                    src={study.image} 
-                                    alt={study.title}
-                                    className="case-study-image"
-                                    loading="lazy"
-                                />
-                            </div>
-                            <div className="case-study-content">
-                                <div className="case-study-brand">
-                                    <div className="case-study-logo">{study.logo}</div>
-                                    {study.brand && <div className="case-study-brand-text">{study.brand}</div>}
-                                </div>
-                                <h3 className="case-study-title">{study.title}</h3>
-                                <div className="case-study-details">
-                                    <div className="case-study-detail-item">
-                                        <span className="detail-label">Industry:</span>
-                                        <span className="detail-value">{study.industry}</span>
+                    {filteredStudies.map((study, index) => {
+                        const caseStudyRoutes = {
+                            1: '/case-studies/lot21',
+                            2: '/case-studies/fantasy-eurovision',
+                            3: '/case-studies/mfabi',
+                            4: '/case-studies/infinite',
+                            5: '/case-studies/simplebn',
+                            6: '/case-studies/via'
+                        };
+                        const route = caseStudyRoutes[study.id] || '/case-studies';
+                        
+                        return (
+                            <Link 
+                                key={study.id} 
+                                to={route}
+                                className="case-study-card-link"
+                            >
+                                <div className="case-study-card">
+                                    <div className="case-study-image-wrapper">
+                                        <img 
+                                            src={study.image} 
+                                            alt={study.title}
+                                            className="case-study-image"
+                                            loading="lazy"
+                                        />
                                     </div>
-                                    <div className="case-study-detail-item">
-                                        <span className="detail-label">Technology:</span>
-                                        <span className="detail-value">{study.technology}</span>
+                                    <div className="case-study-content">
+                                        <div className="case-study-brand">
+                                            <div className="case-study-logo">{study.logo}</div>
+                                            {study.brand && <div className="case-study-brand-text">{study.brand}</div>}
+                                        </div>
+                                        <h3 className="case-study-title">{study.title}</h3>
+                                        <div className="case-study-details">
+                                            <div className="case-study-detail-item">
+                                                <span className="detail-label">Industry:</span>
+                                                <span className="detail-value">{study.industry}</span>
+                                            </div>
+                                            <div className="case-study-detail-item">
+                                                <span className="detail-label">Technology:</span>
+                                                <span className="detail-value">{study.technology}</span>
+                                            </div>
+                                        </div>
+                                        <div className="case-study-view-more">
+                                            View Case Study →
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))}
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </section>
