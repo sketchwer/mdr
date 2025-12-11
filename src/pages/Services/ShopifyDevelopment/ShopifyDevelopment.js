@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ClientsSection from '../../../components/ClientsSection/ClientsSection';
 import Testimonials from '../../../components/Testimonials/Testimonials';
 import CTA from '../../../components/CTA/CTA';
 import './ShopifyDevelopment.css';
@@ -26,9 +25,6 @@ const ShopifyDevelopment = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Clients Section */}
-            <ClientsSection />
 
             {/* Main Features Section */}
             <section className="shopify-features-main">

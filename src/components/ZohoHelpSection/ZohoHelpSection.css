@@ -3,7 +3,7 @@
 }
 
 .section-header {
-    background: #dc2626;
+    background: linear-gradient(135deg, #6a1b9a 0%, #ff6b35 100%);
     padding: 40px 0;
     text-align: center;
 }
@@ -83,7 +83,7 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: #dc2626;
+    color: #6a1b9a;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1;

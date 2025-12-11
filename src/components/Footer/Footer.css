@@ -63,7 +63,7 @@
 }
 
 .footer-links a:hover {
-    color: #dc2626;
+    color: #6a1b9a;
 }
 
 .footer-contact {
@@ -90,7 +90,7 @@
 }
 
 .footer-contact a:hover {
-    color: #dc2626;
+    color: #6a1b9a;
 }
 
 .footer-contact .address {
@@ -118,7 +118,7 @@
 }
 
 .social-link:hover {
-    background: #dc2626;
+    background: linear-gradient(135deg, #6a1b9a 0%, #ff6b35 100%);
     color: #ffffff;
     transform: translateY(-3px);
 }

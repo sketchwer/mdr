@@ -8,51 +8,56 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <h3 className="footer-title">What We Do</h3>
+                        <h3 className="footer-title">WHAT WE DO</h3>
                         <ul className="footer-links">
-                            <li><Link to="/services">Magento Development</Link></li>
+                            <li><Link to="/services">Zoho CRM Implementation</Link></li>
+                            <li><Link to="/services">Zoho Creator Applications</Link></li>
+                            <li><Link to="/services">Zoho People / HRMS Setup</Link></li>
+                            <li><Link to="/services">Zoho Books & Inventory</Link></li>
+                            <li><Link to="/services">Zoho Desk & Support Systems</Link></li>
+                            <li><Link to="/services">AI & Automation</Link></li>
+                            <li><Link to="/services">AI Chatbot Integration (Website & WhatsApp)</Link></li>
+                            <li><Link to="/services">Business Process Automation</Link></li>
+                            <li><Link to="/services">Web Application Development</Link></li>
+                            <li><Link to="/services">Mobile App Development (Android / iOS / Flutter)</Link></li>
+                            <li><Link to="/services">Custom ERP & Business Portals</Link></li>
+                            <li><Link to="/services">Website Development</Link></li>
                             <li><Link to="/services">WordPress Development</Link></li>
-                            <li><Link to="/services">Shopify Development</Link></li>
-                            <li><Link to="/services">Zoho Development Services</Link></li>
-                            <li><Link to="/services">Ecommerce Development</Link></li>
-                            <li><Link to="/services">WooCommerce Development</Link></li>
-                            <li><Link to="/services">Agency Web Solutions</Link></li>
                         </ul>
                     </div>
                     
                     <div className="footer-section">
-                        <h3 className="footer-title">About Us</h3>
+                        <h3 className="footer-title">ABOUT US</h3>
                         <ul className="footer-links">
                             <li><Link to="/about">About Us</Link></li>
-                            <li><Link to="/case-studies">Clientele and Testimonials</Link></li>
+                            <li><Link to="/about">Why Choose Us</Link></li>
+                            <li><Link to="/case-studies">Client Testimonials</Link></li>
                             <li><Link to="/projects">Portfolio</Link></li>
                             <li><Link to="/careers">Career</Link></li>
                             <li><Link to="/about">Our Team</Link></li>
-                            <li><Link to="/about">Partners And Alliances</Link></li>
+                            <li><Link to="/about">Partners & Alliances</Link></li>
                         </ul>
                     </div>
                     
                     <div className="footer-section">
-                        <h3 className="footer-title">Explore</h3>
+                        <h3 className="footer-title">EXPLORE</h3>
                         <ul className="footer-links">
                             <li><Link to="/services">Engagement Models</Link></li>
                             <li><Link to="/services">Solutions</Link></li>
-                            <li><Link to="/services">Store</Link></li>
-                            <li><Link to="/about">Corporate Profile</Link></li>
+                            <li><Link to="/case-studies">Case Studies</Link></li>
                             <li><Link to="/services">Skill Sets</Link></li>
-                            <li><Link to="/about">Awards and Accolades</Link></li>
-                            <li><Link to="/blog">Blog</Link></li>
+                            <li><Link to="/about">Awards & Certification</Link></li>
                         </ul>
                     </div>
                     
                     <div className="footer-section">
-                        <h3 className="footer-title">Connect</h3>
+                        <h3 className="footer-title">CONNECT</h3>
                         <ul className="footer-contact">
                             <li>
-                                <a href="tel:99999999">999999999</a>
+                                <a href="tel:+919999999999">+91 9999999999</a>
                             </li>
                             <li>
-                                <a href="mailto:[email protected]">[email protected]</a>
+                                <a href="mailto:support@macroencoder.com">support@macroencoder.com</a>
                             </li>
                             <li className="address">
                                 <strong>India</strong>

@@ -59,12 +59,12 @@
 }
 
 .filter-dropdown:hover {
-    border-color: #dc2626;
+    border-color: #6a1b9a;
 }
 
 .filter-dropdown:focus {
     outline: none;
-    border-color: #dc2626;
+    border-color: #6a1b9a;
     box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
@@ -95,7 +95,7 @@
 }
 
 .filter-search:focus-within {
-    border-color: #dc2626;
+    border-color: #6a1b9a;
     box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
@@ -230,7 +230,7 @@
 .case-study-view-more {
     margin-top: auto;
     padding-top: 20px;
-    color: #dc2626;
+    color: #6a1b9a;
     font-weight: 600;
     font-size: 1rem;
     display: flex;
@@ -241,7 +241,7 @@
 
 .case-study-card-link:hover .case-study-view-more {
     gap: 12px;
-    color: #b91c1c;
+    color: #4a148c;
 }
 
 .case-study-content {

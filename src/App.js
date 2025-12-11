@@ -47,13 +47,37 @@ import AndroidAppDevelopment from './pages/Services/AndroidAppDevelopment/Androi
 import iPhoneAppDevelopment from './pages/Services/iPhoneAppDevelopment/iPhoneAppDevelopment';
 // Support & Packages
 import WordPressSupportPlans from './pages/Services/WordPressSupportPlans/WordPressSupportPlans';
+// New Services
+import SmartAutomations from './pages/Services/SmartAutomations/SmartAutomations';
+import ZohoCreatorSolutions from './pages/Services/ZohoCreatorSolutions/ZohoCreatorSolutions';
+import ZohoCRMAutomation from './pages/Services/ZohoCRMAutomation/ZohoCRMAutomation';
+import AIDocumentScanning from './pages/Services/AIDocumentScanning/AIDocumentScanning';
+import AIPythonML from './pages/Services/AIPythonML/AIPythonML';
+import ZohoZiaIntelligence from './pages/Services/ZohoZiaIntelligence/ZohoZiaIntelligence';
+import AdvancedJavaDevelopment from './pages/Services/AdvancedJavaDevelopment/AdvancedJavaDevelopment';
+import CustomApplicationDevelopment from './pages/Services/CustomApplicationDevelopment/CustomApplicationDevelopment';
 // Case Studies
-import Lot21CaseStudy from './pages/CaseStudies/Lot21CaseStudy/Lot21CaseStudy';
-import FantasyEurovisionCaseStudy from './pages/CaseStudies/FantasyEurovisionCaseStudy/FantasyEurovisionCaseStudy';
-import MFABICaseStudy from './pages/CaseStudies/MFABICaseStudy/MFABICaseStudy';
-import InfiniteCaseStudy from './pages/CaseStudies/InfiniteCaseStudy/InfiniteCaseStudy';
-import SimpleBNCaseStudy from './pages/CaseStudies/SimpleBNCaseStudy/SimpleBNCaseStudy';
-import VIACaseStudy from './pages/CaseStudies/VIACaseStudy/VIACaseStudy';
+import PausProjectCaseStudy from './pages/CaseStudies/PausProjectCaseStudy/PausProjectCaseStudy';
+import CleverCafeCaseStudy from './pages/CaseStudies/CleverCafeCaseStudy/CleverCafeCaseStudy';
+import HopkinsCPACaseStudy from './pages/CaseStudies/HopkinsCPACaseStudy/HopkinsCPACaseStudy';
+import SriProjectCaseStudy from './pages/CaseStudies/SriProjectCaseStudy/SriProjectCaseStudy';
+import DTCCustomizationCaseStudy from './pages/CaseStudies/DTCCustomizationCaseStudy/DTCCustomizationCaseStudy';
+import TransFormeCaseStudy from './pages/CaseStudies/TransFormeCaseStudy/TransFormeCaseStudy';
+import InfinityAdvertisingCaseStudy from './pages/CaseStudies/InfinityAdvertisingCaseStudy/InfinityAdvertisingCaseStudy';
+import WorldVeganTravelCaseStudy from './pages/CaseStudies/WorldVeganTravelCaseStudy/WorldVeganTravelCaseStudy';
+import WilfredoLabrodaCaseStudy from './pages/CaseStudies/WilfredoLabrodaCaseStudy/WilfredoLabrodaCaseStudy';
+import TimNoyeCaseStudy from './pages/CaseStudies/TimNoyeCaseStudy/TimNoyeCaseStudy';
+import TimHopperCaseStudy from './pages/CaseStudies/TimHopperCaseStudy/TimHopperCaseStudy';
+import ClientLifecycleCaseStudy from './pages/CaseStudies/ClientLifecycleCaseStudy/ClientLifecycleCaseStudy';
+import RachelChapmanCaseStudy from './pages/CaseStudies/RachelChapmanCaseStudy/RachelChapmanCaseStudy';
+import PatrickKoelleCaseStudy from './pages/CaseStudies/PatrickKoelleCaseStudy/PatrickKoelleCaseStudy';
+import KANOMedicalCaseStudy from './pages/CaseStudies/KANOMedicalCaseStudy/KANOMedicalCaseStudy';
+import CCLimitedCaseStudy from './pages/CaseStudies/CCLimitedCaseStudy/CCLimitedCaseStudy';
+import TalencityCaseStudy from './pages/CaseStudies/TalencityCaseStudy/TalencityCaseStudy';
+import MyWorkCaseStudy from './pages/CaseStudies/MyWorkCaseStudy/MyWorkCaseStudy';
+import MatterMindDecorCaseStudy from './pages/CaseStudies/MatterMindDecorCaseStudy/MatterMindDecorCaseStudy';
+import LaPetiteForetCaseStudy from './pages/CaseStudies/LaPetiteForetCaseStudy/LaPetiteForetCaseStudy';
+import SonderDigitalCaseStudy from './pages/CaseStudies/SonderDigitalCaseStudy/SonderDigitalCaseStudy';
 // Industries
 import TilesIndustry from './pages/Industries/TilesIndustry/TilesIndustry';
 import FurnitureIndustry from './pages/Industries/FurnitureIndustry/FurnitureIndustry';
@@ -112,14 +136,38 @@ function App() {
           <Route path="/services/iphone-app-development" element={<iPhoneAppDevelopment />} />
           {/* Support & Packages */}
           <Route path="/services/wordpress-support-plans" element={<WordPressSupportPlans />} />
+          {/* New Services */}
+          <Route path="/services/smart-automations" element={<SmartAutomations />} />
+          <Route path="/services/zoho-creator-solutions" element={<ZohoCreatorSolutions />} />
+          <Route path="/services/zoho-crm-automation" element={<ZohoCRMAutomation />} />
+          <Route path="/services/ai-document-scanning" element={<AIDocumentScanning />} />
+          <Route path="/services/ai-python-ml" element={<AIPythonML />} />
+          <Route path="/services/zoho-zia-intelligence" element={<ZohoZiaIntelligence />} />
+          <Route path="/services/advanced-java-development" element={<AdvancedJavaDevelopment />} />
+          <Route path="/services/custom-application-development" element={<CustomApplicationDevelopment />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/case-studies/lot21" element={<Lot21CaseStudy />} />
-          <Route path="/case-studies/fantasy-eurovision" element={<FantasyEurovisionCaseStudy />} />
-          <Route path="/case-studies/mfabi" element={<MFABICaseStudy />} />
-          <Route path="/case-studies/infinite" element={<InfiniteCaseStudy />} />
-          <Route path="/case-studies/simplebn" element={<SimpleBNCaseStudy />} />
-          <Route path="/case-studies/via" element={<VIACaseStudy />} />
+          <Route path="/case-studies/paus-project" element={<PausProjectCaseStudy />} />
+          <Route path="/case-studies/clever-cafe" element={<CleverCafeCaseStudy />} />
+          <Route path="/case-studies/hopkins-cpa-firm" element={<HopkinsCPACaseStudy />} />
+          <Route path="/case-studies/sri-project" element={<SriProjectCaseStudy />} />
+          <Route path="/case-studies/dtc-customization" element={<DTCCustomizationCaseStudy />} />
+          <Route path="/case-studies/transforme-project" element={<TransFormeCaseStudy />} />
+          <Route path="/case-studies/infinity-advertising" element={<InfinityAdvertisingCaseStudy />} />
+          <Route path="/case-studies/world-vegan-travel" element={<WorldVeganTravelCaseStudy />} />
+          <Route path="/case-studies/wilfredo-labroda" element={<WilfredoLabrodaCaseStudy />} />
+          <Route path="/case-studies/tim-noye" element={<TimNoyeCaseStudy />} />
+          <Route path="/case-studies/tim-hopper" element={<TimHopperCaseStudy />} />
+          <Route path="/case-studies/client-lifecycle" element={<ClientLifecycleCaseStudy />} />
+          <Route path="/case-studies/rachel-chapman" element={<RachelChapmanCaseStudy />} />
+          <Route path="/case-studies/patrick-koelle" element={<PatrickKoelleCaseStudy />} />
+          <Route path="/case-studies/kano-medical" element={<KANOMedicalCaseStudy />} />
+          <Route path="/case-studies/cc-limited" element={<CCLimitedCaseStudy />} />
+          <Route path="/case-studies/talencity" element={<TalencityCaseStudy />} />
+          <Route path="/case-studies/mywork" element={<MyWorkCaseStudy />} />
+          <Route path="/case-studies/matter-mind-decor" element={<MatterMindDecorCaseStudy />} />
+          <Route path="/case-studies/la-petite-foret" element={<LaPetiteForetCaseStudy />} />
+          <Route path="/case-studies/sonder-digital" element={<SonderDigitalCaseStudy />} />
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/industries/tiles" element={<TilesIndustry />} />
           <Route path="/industries/furniture" element={<FurnitureIndustry />} />

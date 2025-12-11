@@ -1,8 +1,6 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
-import ZohoCompetency from '../../components/ZohoCompetency/ZohoCompetency';
 import ServicesWeProvide from '../../components/ServicesWeProvide/ServicesWeProvide';
-import ClientsSection from '../../components/ClientsSection/ClientsSection';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import './Home.css';
 
@@ -35,27 +33,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Intro Section */}
-            <section className="intro-section">
-                <div className="container">
-                    <div className="intro-content">
-                        <div className="intro-text">
-                            <h2 className="section-title">Let our expert IT brains help you with your IT challenges</h2>
-                            <p className="section-description">
-                                With 19+ years of experience and 6200+ global clients, we deliver cutting-edge technology solutions that drive innovation and growth. Improve overall business productivity, offer a higher customer experience, and many other things.
-                            </p>
-                        </div>
-                        <div className="intro-image">
-                            <img 
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-                                alt="Team Collaboration" 
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <ZohoCompetency />
             <ServicesWeProvide />
             
             {/* Zoho Solutions Section - Mixed Content */}
@@ -115,21 +92,13 @@ const Home = () => {
                     <div className="features-grid">
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                                    <path d="M4 22h16"/>
-                                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
-                                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
-                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
-                                </svg>
-                            </div>
-                            <h3>A winning team</h3>
-                            <p>250+ partnerships for progress</p>
-                        </div>
-                        <div className="feature-card">
-                            <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient1)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <defs>
+                                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stopColor="#8a2be2" />
+                                            <stop offset="100%" stopColor="#ff6b35" />
+                                        </linearGradient>
+                                    </defs>
                                     <circle cx="12" cy="12" r="10"/>
                                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                                     <path d="M2 12h20"/>
@@ -140,7 +109,13 @@ const Home = () => {
                         </div>
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient2)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <defs>
+                                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stopColor="#8a2be2" />
+                                            <stop offset="100%" stopColor="#ff6b35" />
+                                        </linearGradient>
+                                    </defs>
                                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                                 </svg>
                             </div>
@@ -149,7 +124,13 @@ const Home = () => {
                         </div>
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient3)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <defs>
+                                        <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stopColor="#8a2be2" />
+                                            <stop offset="100%" stopColor="#ff6b35" />
+                                        </linearGradient>
+                                    </defs>
                                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                     <polyline points="22 4 12 14.01 9 11.01"/>
                                 </svg>
@@ -161,7 +142,6 @@ const Home = () => {
                 </div>
             </section>
 
-            <ClientsSection />
             <Testimonials />
         </div>
     );

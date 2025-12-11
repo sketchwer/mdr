@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ClientsSection from '../ClientsSection/ClientsSection';
 import Testimonials from '../Testimonials/Testimonials';
 import CTA from '../CTA/CTA';
 import './IndustryDetail.css';
@@ -78,8 +77,6 @@ const IndustryDetail = ({
                 </section>
             )}
 
-            {/* Partners Section */}
-            <ClientsSection />
 
             {/* Main Solutions Section */}
             <section className="industry-solutions-main">

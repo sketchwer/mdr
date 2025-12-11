@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className={`top-contact-bar ${isScrolled ? 'hidden' : ''}`}>
                 <div className="container">
                     <div className="contact-info">
-                        <a href="mailto:[email protected]" className="contact-item">[email protected]</a>
+                        <a href="mailto:support@macroencoder.com" className="contact-item">support@macroencoder.com</a>
                         <span className="contact-separator">|</span>
                         <a href="tel:0000" className="contact-item">9999999999</a>
                     </div>
@@ -100,102 +100,53 @@ const Navbar = () => {
                                 </div>
                                 <div className={`services-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
                                     <div className="dropdown-content">
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                                    <path d="M9 9h6v6H9z"/>
-                                                </svg>
-                                                Magento Commerce
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/magento-development"><span className="dropdown-icon">→</span>Magento Development</Link></li>
-                                                <li><Link to="/services/magento-2-migration"><span className="dropdown-icon">→</span>Magento 2 Migration</Link></li>
-                                                <li><Link to="/services/magento-support-plan"><span className="dropdown-icon">→</span>Magento Support Plan</Link></li>
-                                                <li><Link to="/services/hyva-theme-development"><span className="dropdown-icon">→</span>Hyvä Theme Development</Link></li>
-                                                <li><Link to="/services/adobe-commerce-development"><span className="dropdown-icon">→</span>Adobe Commerce Development</Link></li>
-                                                <li><Link to="/services/magento-enterprise"><span className="dropdown-icon">→</span>Magento Enterprise</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/smart-automations">
+                                                <h4>Smart Automations & Integrations</h4>
+                                                <p>Connect all your apps and make daily work automatic. AI, Make.com, and API integrations for seamless workflows.</p>
+                                            </Link>
                                         </div>
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path d="M6 2L3 6v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6l-3-4H6z"/>
-                                                    <path d="M3 6h18"/>
-                                                    <path d="M8 10h8M8 14h8M8 18h8"/>
-                                                </svg>
-                                                E-Commerce Solution
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/shopify-development"><span className="dropdown-icon">→</span>Shopify Development</Link></li>
-                                                <li><Link to="/services/woocommerce-development"><span className="dropdown-icon">→</span>WooCommerce Development</Link></li>
-                                                <li><Link to="/services/bigcommerce-development"><span className="dropdown-icon">→</span>BigCommerce Development</Link></li>
-                                                <li><Link to="/services/shopline-development"><span className="dropdown-icon">→</span>Shopline Development</Link></li>
-                                                <li><Link to="/services/ecommerce-maintenance"><span className="dropdown-icon">→</span>eCommerce Maintenance</Link></li>
-                                                <li><Link to="/services/pimcore-development"><span className="dropdown-icon">→</span>PIMCore Development</Link></li>
-                                                <li><Link to="/services/ecommerce-development"><span className="dropdown-icon">→</span>E-Commerce Development</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/zoho-creator-solutions">
+                                                <h4>Zoho Creator Solutions</h4>
+                                                <p>Create applications exactly the way your business works. Custom apps for production, HR, inventory, and field teams.</p>
+                                            </Link>
                                         </div>
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <rect x="3" y="3" width="7" height="7"/>
-                                                    <rect x="14" y="3" width="7" height="7"/>
-                                                    <rect x="14" y="14" width="7" height="7"/>
-                                                    <rect x="3" y="14" width="7" height="7"/>
-                                                </svg>
-                                                CMS/CRM Development
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/php-web-development"><span className="dropdown-icon">→</span>PHP Web Development</Link></li>
-                                                <li><Link to="/services/laravel-development"><span className="dropdown-icon">→</span>Laravel Development</Link></li>
-                                                <li><Link to="/services/wordpress-development"><span className="dropdown-icon">→</span>WordPress Development</Link></li>
-                                                <li><Link to="/services/zoho-development-services"><span className="dropdown-icon">→</span>Zoho Development Services</Link></li>
-                                                <li><Link to="/services/odoo-development"><span className="dropdown-icon">→</span>Odoo Development</Link></li>
-                                                <li><Link to="/services/reactjs-development"><span className="dropdown-icon">→</span>ReactJS Development</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/zoho-crm-automation">
+                                                <h4>Zoho CRM Automation</h4>
+                                                <p>Transform sales operations with smart CRM workflows. Lead routing, follow-ups, and Zia insights.</p>
+                                            </Link>
                                         </div>
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <line x1="18" y1="20" x2="18" y2="10"/>
-                                                    <line x1="12" y1="20" x2="12" y2="4"/>
-                                                    <line x1="6" y1="20" x2="6" y2="14"/>
-                                                </svg>
-                                                Digital Marketing
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/search-engine-optimisation"><span className="dropdown-icon">→</span>Search Engine Optimisation</Link></li>
-                                                <li><Link to="/services/ppc-management"><span className="dropdown-icon">→</span>PPC Management</Link></li>
-                                                <li><Link to="/services/content-marketing"><span className="dropdown-icon">→</span>Content Marketing</Link></li>
-                                                <li><Link to="/services/social-media-management"><span className="dropdown-icon">→</span>Social Media Management</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/ai-document-scanning">
+                                                <h4>AI Document Scanning, Reading & Automation</h4>
+                                                <p>Scan any document — invoice, bill, form, ID, report, or receipt. OpenAI and smart OCR for instant data extraction.</p>
+                                            </Link>
                                         </div>
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                                                    <line x1="12" y1="18" x2="12.01" y2="18"/>
-                                                </svg>
-                                                Mobile App Solutions
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/whatsapp-chatbot-integration"><span className="dropdown-icon">→</span>Whatsapp Chatbot Integration</Link></li>
-                                                <li><Link to="/services/flutter-app-development"><span className="dropdown-icon">→</span>Flutter App Development</Link></li>
-                                                <li><Link to="/services/android-app-development"><span className="dropdown-icon">→</span>Android App Development</Link></li>
-                                                <li><Link to="/services/iphone-app-development"><span className="dropdown-icon">→</span>iPhone App Development</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/ai-python-ml">
+                                                <h4>AI, Python & Machine Learning</h4>
+                                                <p>Unlock powerful automation with AI-driven solutions. Python + ML models for document reading and data extraction.</p>
+                                            </Link>
                                         </div>
-                                        <div className="dropdown-section">
-                                            <h4>
-                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                                                </svg>
-                                                Support & Packages
-                                            </h4>
-                                            <ul>
-                                                <li><Link to="/services/wordpress-support-plans"><span className="dropdown-icon">→</span>WordPress Support Plans</Link></li>
-                                            </ul>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/zoho-zia-intelligence">
+                                                <h4>Zoho Zia Intelligence</h4>
+                                                <p>Predictive insights and anomaly alerts. Email intelligence and chat assistance. AI-triggered workflows for smart automation.</p>
+                                            </Link>
+                                        </div>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/advanced-java-development">
+                                                <h4>Advanced Java Development</h4>
+                                                <p>Secure, scalable, enterprise-grade Java applications. Spring Boot, MVC, WebFlux, Hibernate, Struts, and JSF.</p>
+                                            </Link>
+                                        </div>
+                                        <div className="dropdown-service-item">
+                                            <Link to="/services/custom-application-development">
+                                                <h4>Custom Application Development</h4>
+                                                <p>ERP, HRMS, attendance, inventory, finance, and production. Service management and complete automation.</p>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

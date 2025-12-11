@@ -70,7 +70,6 @@ const ClientsSection = () => {
             <div className="container">
                 <div className="clients-header">
                     <h2 className="section-title">Trusted by 100+ companies</h2>
-                    <p className="section-subtitle">A winning team with 250+ partnerships for progress</p>
                 </div>
                 <div className="clients-grid">
                     {clients.map((client, index) => (

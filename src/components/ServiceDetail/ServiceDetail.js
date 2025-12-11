@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ClientsSection from '../ClientsSection/ClientsSection';
 import Testimonials from '../Testimonials/Testimonials';
 import './ServiceDetail.css';
 
@@ -52,9 +51,6 @@ const ServiceDetail = ({
                     </div>
                 </div>
             </section>
-
-            {/* Clients Section */}
-            <ClientsSection />
 
             {/* Overview Section */}
             {overview && (
