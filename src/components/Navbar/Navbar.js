@@ -100,53 +100,54 @@ const Navbar = () => {
                                 </div>
                                 <div className={`services-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
                                     <div className="dropdown-content">
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/smart-automations">
-                                                <h4>Smart Automations & Integrations</h4>
-                                                <p>Connect all your apps and make daily work automatic. AI, Make.com, and API integrations for seamless workflows.</p>
-                                            </Link>
+                                        <div className="dropdown-section">
+                                            <h4>Zoho Solutions</h4>
+                                            <ul>
+                                                <li><Link to="/services/zoho-crm-implementation"><span className="dropdown-icon">→</span>Zoho CRM Implementation</Link></li>
+                                                <li><Link to="/services/zoho-creator-applications"><span className="dropdown-icon">→</span>Zoho Creator Applications</Link></li>
+                                                <li><Link to="/services/zoho-people"><span className="dropdown-icon">→</span>Zoho People (HR & Attendance)</Link></li>
+                                                <li><Link to="/services/zoho-books-inventory"><span className="dropdown-icon">→</span>Zoho Books & Inventory</Link></li>
+                                                <li><Link to="/services/zoho-desk"><span className="dropdown-icon">→</span>Zoho Desk</Link></li>
+                                                <li><Link to="/services/zoho-projects"><span className="dropdown-icon">→</span>Zoho Projects</Link></li>
+                                                <li><Link to="/services/zoho-integrations"><span className="dropdown-icon">→</span>Zoho Integrations</Link></li>
+                                                <li><Link to="/services/zoho-extensions"><span className="dropdown-icon">→</span>Zoho Extensions Development</Link></li>
+                                            </ul>
                                         </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/zoho-creator-solutions">
-                                                <h4>Zoho Creator Solutions</h4>
-                                                <p>Create applications exactly the way your business works. Custom apps for production, HR, inventory, and field teams.</p>
-                                            </Link>
+                                        <div className="dropdown-section">
+                                            <h4>AI & Automation</h4>
+                                            <ul>
+                                                <li><Link to="/services/ai-chatbots"><span className="dropdown-icon">→</span>AI Chatbots (Website & WhatsApp)</Link></li>
+                                                <li><Link to="/services/business-process-automation"><span className="dropdown-icon">→</span>Business Process Automation</Link></li>
+                                                <li><Link to="/services/sales-automation"><span className="dropdown-icon">→</span>Sales Automation (AI-Based)</Link></li>
+                                                <li><Link to="/services/lead-qualification"><span className="dropdown-icon">→</span>Lead Qualification & Follow-Up Automation</Link></li>
+                                                <li><Link to="/services/document-pdf-automation"><span className="dropdown-icon">→</span>Document & PDF Automation</Link></li>
+                                                <li><Link to="/services/email-whatsapp-automation"><span className="dropdown-icon">→</span>Email & WhatsApp Notification Automation</Link></li>
+                                                <li><Link to="/services/task-approval-workflows"><span className="dropdown-icon">→</span>Task & Approval Workflows</Link></li>
+                                                <li><Link to="/services/internal-hr-finance-automation"><span className="dropdown-icon">→</span>Internal HR/Finance Automation</Link></li>
+                                                <li><Link to="/services/customer-support-automation"><span className="dropdown-icon">→</span>Customer Support Automation</Link></li>
+                                                <li><Link to="/services/ai-reports-insights"><span className="dropdown-icon">→</span>AI Reports & Insights</Link></li>
+                                            </ul>
                                         </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/zoho-crm-automation">
-                                                <h4>Zoho CRM Automation</h4>
-                                                <p>Transform sales operations with smart CRM workflows. Lead routing, follow-ups, and Zia insights.</p>
-                                            </Link>
+                                        <div className="dropdown-section">
+                                            <h4>Software Development</h4>
+                                            <ul>
+                                                <li><Link to="/services/web-application-development"><span className="dropdown-icon">→</span>Web Application Development</Link></li>
+                                                <li><Link to="/services/java-spring-boot"><span className="dropdown-icon">→</span>Java / Spring Boot Development</Link></li>
+                                                <li><Link to="/services/php-laravel"><span className="dropdown-icon">→</span>PHP / Laravel Development</Link></li>
+                                                <li><Link to="/services/reactjs-frontend"><span className="dropdown-icon">→</span>ReactJS / Frontend Development</Link></li>
+                                                <li><Link to="/services/mobile-app-development"><span className="dropdown-icon">→</span>Mobile App Development (Android / iOS / Flutter)</Link></li>
+                                                <li><Link to="/services/custom-erp-portals"><span className="dropdown-icon">→</span>Custom ERP & Business Portals</Link></li>
+                                            </ul>
                                         </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/ai-document-scanning">
-                                                <h4>AI Document Scanning, Reading & Automation</h4>
-                                                <p>Scan any document — invoice, bill, form, ID, report, or receipt. OpenAI and smart OCR for instant data extraction.</p>
-                                            </Link>
-                                        </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/ai-python-ml">
-                                                <h4>AI, Python & Machine Learning</h4>
-                                                <p>Unlock powerful automation with AI-driven solutions. Python + ML models for document reading and data extraction.</p>
-                                            </Link>
-                                        </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/zoho-zia-intelligence">
-                                                <h4>Zoho Zia Intelligence</h4>
-                                                <p>Predictive insights and anomaly alerts. Email intelligence and chat assistance. AI-triggered workflows for smart automation.</p>
-                                            </Link>
-                                        </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/advanced-java-development">
-                                                <h4>Advanced Java Development</h4>
-                                                <p>Secure, scalable, enterprise-grade Java applications. Spring Boot, MVC, WebFlux, Hibernate, Struts, and JSF.</p>
-                                            </Link>
-                                        </div>
-                                        <div className="dropdown-service-item">
-                                            <Link to="/services/custom-application-development">
-                                                <h4>Custom Application Development</h4>
-                                                <p>ERP, HRMS, attendance, inventory, finance, and production. Service management and complete automation.</p>
-                                            </Link>
+                                        <div className="dropdown-section">
+                                            <h4>Website Development</h4>
+                                            <ul>
+                                                <li><Link to="/services/business-website-development"><span className="dropdown-icon">→</span>Business Website Development</Link></li>
+                                                <li><Link to="/services/wordpress-development"><span className="dropdown-icon">→</span>WordPress Development</Link></li>
+                                                <li><Link to="/services/landing-page-design"><span className="dropdown-icon">→</span>Landing Page Design</Link></li>
+                                                <li><Link to="/services/website-redesign"><span className="dropdown-icon">→</span>Website Redesign</Link></li>
+                                                <li><Link to="/services/website-maintenance"><span className="dropdown-icon">→</span>Website Maintenance & Support</Link></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -224,9 +225,16 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <Link to="/contact" className="contact-us-button">
-                            CONTACT US
-                        </Link>
+                        <div className="contact-button-wrapper">
+                            <img 
+                                src="/zoho.png" 
+                                alt="Zoho Solutions" 
+                                className="navbar-zoho-image"
+                            />
+                            <Link to="/contact" className="contact-us-button">
+                                CONTACT US
+                            </Link>
+                        </div>
                         <button className={`nav-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                             <span></span>
                             <span></span>

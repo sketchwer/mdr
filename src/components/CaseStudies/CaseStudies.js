@@ -15,7 +15,7 @@ const CaseStudies = () => {
             title: 'Streamlined order creation with automated sync',
             industry: 'Finance Automation',
             technology: 'Zoho CRM, Zoho Books',
-            image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/pau's project.png",
             category: 'finance'
         },
         {
@@ -25,7 +25,7 @@ const CaseStudies = () => {
             title: 'Unified meetings, bookings & CRM updates',
             industry: 'Service & Training',
             technology: 'Zoho CRM, Zoho Meeting, Zoho Bookings',
-            image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/clever cafe.jpeg",
             category: 'service'
         },
         {
@@ -35,7 +35,7 @@ const CaseStudies = () => {
             title: 'Automated document signing to subscription billing',
             industry: 'Accounting & Finance',
             technology: 'Zoho CRM, Zoho Billing',
-            image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/hopkins.png",
             category: 'accounting'
         },
         {
@@ -45,7 +45,7 @@ const CaseStudies = () => {
             title: 'Automated onboarding and billing workflows',
             industry: 'Retail & Multi‑Store',
             technology: 'Zoho CRM, Zoho Books',
-            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/sri project.jpeg",
             category: 'retail'
         },
         {
@@ -55,7 +55,7 @@ const CaseStudies = () => {
             title: 'Implemented secure email authentication',
             industry: 'Email Infrastructure',
             technology: 'SPF, DKIM',
-            image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/dtc customization.png",
             category: 'email'
         },
         {
@@ -65,7 +65,7 @@ const CaseStudies = () => {
             title: 'Automated facilitator and overdue task tracking',
             industry: 'Training & Education',
             technology: 'Zoho Projects, Zoho Creator',
-            image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/transforme project.jpeg",
             category: 'training'
         },
         {
@@ -75,7 +75,7 @@ const CaseStudies = () => {
             title: 'Built a complete Zoho‑based ERP ecosystem',
             industry: 'Advertising & ERP',
             technology: 'Zoho Creator, CRM, Books',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/infinity advertising.jpeg",
             category: 'advertising'
         },
         {
@@ -85,7 +85,7 @@ const CaseStudies = () => {
             title: 'Automated bookings, reminders & payment flows',
             industry: 'Travel & Tourism',
             technology: 'Zoho CRM, Zoho Campaigns',
-            image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/world vegan travel.jpeg",
             category: 'travel'
         },
         {
@@ -95,7 +95,7 @@ const CaseStudies = () => {
             title: 'Optimized Desk workflows & reporting',
             industry: 'Customer Support',
             technology: 'Zoho Desk, Zoho Analytics',
-            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/wilfredo labroda.jpeg",
             category: 'support'
         },
         {
@@ -105,7 +105,7 @@ const CaseStudies = () => {
             title: 'Connected meetings, campaigns & calendar sync',
             industry: 'Business Consulting',
             technology: 'Zoho Meeting, CRM',
-            image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/tim noye.jpeg",
             category: 'consulting'
         },
         {
@@ -115,7 +115,7 @@ const CaseStudies = () => {
             title: 'Delivered full recruitment analytics automation',
             industry: 'Recruitment',
             technology: 'Zoho Recruit',
-            image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/tim hopper.png",
             category: 'recruitment'
         },
         {
@@ -125,7 +125,7 @@ const CaseStudies = () => {
             title: 'Automated complete lead‑to‑post‑sale cycle',
             industry: 'Accounting',
             technology: 'Zoho CRM, Books, Desk',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/client lifecycle.png",
             category: 'enterprise'
         },
         {
@@ -135,7 +135,7 @@ const CaseStudies = () => {
             title: 'Enabled real‑time Shopify to CRM sync',
             industry: 'E‑Commerce',
             technology: 'Shopify, Zoho CRM',
-            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/rachel chapman.png",
             category: 'ecommerce'
         },
         {
@@ -145,7 +145,7 @@ const CaseStudies = () => {
             title: 'Unified CRM, Desk & Books workflows',
             industry: 'Consulting & Support',
             technology: 'Zoho Desk, CRM, Books',
-            image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/patrick koelle.png",
             category: 'consulting'
         },
         {
@@ -155,7 +155,7 @@ const CaseStudies = () => {
             title: 'Implemented CRM & marketing automation',
             industry: 'Healthcare',
             technology: 'Zoho CRM, Zoho Marketing',
-            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/kano medical.png",
             category: 'healthcare'
         },
         {
@@ -165,7 +165,7 @@ const CaseStudies = () => {
             title: 'Structured pipeline for spare parts sales',
             industry: 'Automobile',
             technology: 'Zoho CRM',
-            image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/cc limited.png",
             category: 'automobile'
         },
         {
@@ -175,7 +175,7 @@ const CaseStudies = () => {
             title: 'Cleaned & optimized recruitment operations',
             industry: 'Recruitment',
             technology: 'Zoho Recruit, Zoho CRM',
-            image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/talencity.png",
             category: 'recruitment'
         },
         {
@@ -185,7 +185,7 @@ const CaseStudies = () => {
             title: 'Automated candidate communication & filters',
             industry: 'Recruitment',
             technology: 'Zoho Recruit',
-            image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/my work.png",
             category: 'recruitment'
         },
         {
@@ -195,7 +195,7 @@ const CaseStudies = () => {
             title: 'Automated post‑sale workflows & billing sync',
             industry: 'Interior Design',
             technology: 'Zoho CRM, Books',
-            image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/matter mind decor.png",
             category: 'design'
         },
         {
@@ -205,7 +205,7 @@ const CaseStudies = () => {
             title: 'Automated formatted CV generation',
             industry: 'Recruitment',
             technology: 'Zoho Recruit',
-            image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/la petite foret.png",
             category: 'recruitment'
         },
         {
@@ -215,7 +215,7 @@ const CaseStudies = () => {
             title: 'Integrated CRM with marketing automation',
             industry: 'Digital Marketing',
             technology: 'Zoho CRM, Zoho Marketing',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: "/case study/sonder digital.png",
             category: 'marketing'
         }
     ];

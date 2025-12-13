@@ -56,6 +56,37 @@ import AIPythonML from './pages/Services/AIPythonML/AIPythonML';
 import ZohoZiaIntelligence from './pages/Services/ZohoZiaIntelligence/ZohoZiaIntelligence';
 import AdvancedJavaDevelopment from './pages/Services/AdvancedJavaDevelopment/AdvancedJavaDevelopment';
 import CustomApplicationDevelopment from './pages/Services/CustomApplicationDevelopment/CustomApplicationDevelopment';
+// Zoho Services
+import ZohoCRMImplementation from './pages/Services/ZohoCRMImplementation/ZohoCRMImplementation';
+import ZohoPeople from './pages/Services/ZohoPeople/ZohoPeople';
+import ZohoBooksInventory from './pages/Services/ZohoBooksInventory/ZohoBooksInventory';
+import ZohoDesk from './pages/Services/ZohoDesk/ZohoDesk';
+import ZohoProjects from './pages/Services/ZohoProjects/ZohoProjects';
+import ZohoIntegrations from './pages/Services/ZohoIntegrations/ZohoIntegrations';
+import ZohoExtensions from './pages/Services/ZohoExtensions/ZohoExtensions';
+// AI & Automation Services
+import AIChatbots from './pages/Services/AIChatbots/AIChatbots';
+import BusinessProcessAutomation from './pages/Services/BusinessProcessAutomation/BusinessProcessAutomation';
+import SalesAutomation from './pages/Services/SalesAutomation/SalesAutomation';
+import LeadQualification from './pages/Services/LeadQualification/LeadQualification';
+import DocumentPDFAutomation from './pages/Services/DocumentPDFAutomation/DocumentPDFAutomation';
+import EmailWhatsAppAutomation from './pages/Services/EmailWhatsAppAutomation/EmailWhatsAppAutomation';
+import TaskApprovalWorkflows from './pages/Services/TaskApprovalWorkflows/TaskApprovalWorkflows';
+import InternalHRFinanceAutomation from './pages/Services/InternalHRFinanceAutomation/InternalHRFinanceAutomation';
+import CustomerSupportAutomation from './pages/Services/CustomerSupportAutomation/CustomerSupportAutomation';
+import AIReportsInsights from './pages/Services/AIReportsInsights/AIReportsInsights';
+// Software Development Services
+import WebApplicationDevelopment from './pages/Services/WebApplicationDevelopment/WebApplicationDevelopment';
+import JavaSpringBoot from './pages/Services/JavaSpringBoot/JavaSpringBoot';
+import PHPLaravel from './pages/Services/PHPLaravel/PHPLaravel';
+import ReactJSFrontend from './pages/Services/ReactJSFrontend/ReactJSFrontend';
+import MobileAppDevelopment from './pages/Services/MobileAppDevelopment/MobileAppDevelopment';
+import CustomERPPortals from './pages/Services/CustomERPPortals/CustomERPPortals';
+// Website Development Services
+import BusinessWebsiteDevelopment from './pages/Services/BusinessWebsiteDevelopment/BusinessWebsiteDevelopment';
+import LandingPageDesign from './pages/Services/LandingPageDesign/LandingPageDesign';
+import WebsiteRedesign from './pages/Services/WebsiteRedesign/WebsiteRedesign';
+import WebsiteMaintenance from './pages/Services/WebsiteMaintenance/WebsiteMaintenance';
 // Case Studies
 import PausProjectCaseStudy from './pages/CaseStudies/PausProjectCaseStudy/PausProjectCaseStudy';
 import CleverCafeCaseStudy from './pages/CaseStudies/CleverCafeCaseStudy/CleverCafeCaseStudy';
@@ -136,9 +167,41 @@ function App() {
           <Route path="/services/iphone-app-development" element={<iPhoneAppDevelopment />} />
           {/* Support & Packages */}
           <Route path="/services/wordpress-support-plans" element={<WordPressSupportPlans />} />
+          {/* Zoho Services */}
+          <Route path="/services/zoho-crm-implementation" element={<ZohoCRMImplementation />} />
+          <Route path="/services/zoho-creator-applications" element={<ZohoCreatorSolutions />} />
+          <Route path="/services/zoho-creator-solutions" element={<ZohoCreatorSolutions />} />
+          <Route path="/services/zoho-people" element={<ZohoPeople />} />
+          <Route path="/services/zoho-books-inventory" element={<ZohoBooksInventory />} />
+          <Route path="/services/zoho-desk" element={<ZohoDesk />} />
+          <Route path="/services/zoho-projects" element={<ZohoProjects />} />
+          <Route path="/services/zoho-integrations" element={<ZohoIntegrations />} />
+          <Route path="/services/zoho-extensions" element={<ZohoExtensions />} />
+          {/* AI & Automation Services */}
+          <Route path="/services/ai-chatbots" element={<AIChatbots />} />
+          <Route path="/services/business-process-automation" element={<BusinessProcessAutomation />} />
+          <Route path="/services/sales-automation" element={<SalesAutomation />} />
+          <Route path="/services/lead-qualification" element={<LeadQualification />} />
+          <Route path="/services/document-pdf-automation" element={<DocumentPDFAutomation />} />
+          <Route path="/services/email-whatsapp-automation" element={<EmailWhatsAppAutomation />} />
+          <Route path="/services/task-approval-workflows" element={<TaskApprovalWorkflows />} />
+          <Route path="/services/internal-hr-finance-automation" element={<InternalHRFinanceAutomation />} />
+          <Route path="/services/customer-support-automation" element={<CustomerSupportAutomation />} />
+          <Route path="/services/ai-reports-insights" element={<AIReportsInsights />} />
+          {/* Software Development Services */}
+          <Route path="/services/web-application-development" element={<WebApplicationDevelopment />} />
+          <Route path="/services/java-spring-boot" element={<JavaSpringBoot />} />
+          <Route path="/services/php-laravel" element={<PHPLaravel />} />
+          <Route path="/services/reactjs-frontend" element={<ReactJSFrontend />} />
+          <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
+          <Route path="/services/custom-erp-portals" element={<CustomERPPortals />} />
+          {/* Website Development Services */}
+          <Route path="/services/business-website-development" element={<BusinessWebsiteDevelopment />} />
+          <Route path="/services/landing-page-design" element={<LandingPageDesign />} />
+          <Route path="/services/website-redesign" element={<WebsiteRedesign />} />
+          <Route path="/services/website-maintenance" element={<WebsiteMaintenance />} />
           {/* New Services */}
           <Route path="/services/smart-automations" element={<SmartAutomations />} />
-          <Route path="/services/zoho-creator-solutions" element={<ZohoCreatorSolutions />} />
           <Route path="/services/zoho-crm-automation" element={<ZohoCRMAutomation />} />
           <Route path="/services/ai-document-scanning" element={<AIDocumentScanning />} />
           <Route path="/services/ai-python-ml" element={<AIPythonML />} />

@@ -52,28 +52,28 @@ const Home = () => {
                             </p>
                             <div className="zoho-features">
                                 <div className="zoho-feature-item">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                         <polyline points="22 4 12 14.01 9 11.01"/>
                                     </svg>
                                     <span>Business CRM & Email Automation</span>
                                 </div>
                                 <div className="zoho-feature-item">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                         <polyline points="22 4 12 14.01 9 11.01"/>
                                     </svg>
                                     <span>Document Automation & KPIs</span>
                                 </div>
                                 <div className="zoho-feature-item">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                         <polyline points="22 4 12 14.01 9 11.01"/>
                                     </svg>
                                     <span>VoIP & Call Center Solutions</span>
                                 </div>
                                 <div className="zoho-feature-item">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                         <polyline points="22 4 12 14.01 9 11.01"/>
                                     </svg>
@@ -92,13 +92,7 @@ const Home = () => {
                     <div className="features-grid">
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient1)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <defs>
-                                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stopColor="#8a2be2" />
-                                            <stop offset="100%" stopColor="#ff6b35" />
-                                        </linearGradient>
-                                    </defs>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <circle cx="12" cy="12" r="10"/>
                                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                                     <path d="M2 12h20"/>
@@ -109,13 +103,7 @@ const Home = () => {
                         </div>
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient2)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <defs>
-                                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stopColor="#8a2be2" />
-                                            <stop offset="100%" stopColor="#ff6b35" />
-                                        </linearGradient>
-                                    </defs>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                                 </svg>
                             </div>
@@ -124,13 +112,7 @@ const Home = () => {
                         </div>
                         <div className="feature-card">
                             <div className="feature-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#gradient3)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <defs>
-                                        <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" stopColor="#8a2be2" />
-                                            <stop offset="100%" stopColor="#ff6b35" />
-                                        </linearGradient>
-                                    </defs>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#334155" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                     <polyline points="22 4 12 14.01 9 11.01"/>
                                 </svg>
