@@ -33,6 +33,28 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Expert IT Section */}
+            <section className="expert-it-section">
+                <div className="container">
+                    <div className="expert-it-content">
+                        <div className="expert-it-text">
+                            <h2 className="expert-it-title">Let our expert IT brains solve your toughest business challenges</h2>
+                            <div className="expert-it-description">
+                                <p>
+                                    With 12+ years of experience, we help all types of businesses reduce manual work and move towards smart digital systems. No matter which industry you belong to — automobile, food, appliances, manufacturing, trading, or services — our solutions fit perfectly into your daily workflow. You don't need any technical knowledge; our tools are easy for anyone to use. From attendance and production to billing and customer management, our AI-powered systems make your work smoother, more accurate, and more productive.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="expert-it-image">
+                            <img 
+                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                                alt="Team working together on laptops" 
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <ServicesWeProvide />
             
             {/* Zoho Solutions Section - Mixed Content */}

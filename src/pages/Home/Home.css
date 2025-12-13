@@ -87,6 +87,66 @@
     letter-spacing: 0.1em;
 }
 
+/* Expert IT Section */
+.expert-it-section {
+    padding: 100px 0;
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+
+.expert-it-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expert-it-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.expert-it-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: #f97316;
+    margin-bottom: 24px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.expert-it-description {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: #475569;
+    text-align: left;
+}
+
+.expert-it-description p {
+    margin: 0;
+}
+
+.expert-it-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.expert-it-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.expert-it-image:hover img {
+    transform: scale(1.02);
+}
+
 /* Intro Section */
 .intro-section {
     padding: 100px 0;
@@ -343,7 +403,8 @@
     }
     
     .intro-content,
-    .zoho-solutions-content {
+    .zoho-solutions-content,
+    .expert-it-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -351,6 +412,7 @@
 
 @media (max-width: 768px) {
     .stats-section,
+    .expert-it-section,
     .intro-section,
     .zoho-solutions-section,
     .why-choose-section {
@@ -374,6 +436,23 @@
     
     .home-page .stats-section .stat-card .stat-label {
         color: #000000 !important;
+    }
+    
+    .expert-it-section {
+        padding: 60px 0;
+    }
+    
+    .expert-it-title {
+        font-size: 2rem;
+    }
+    
+    .expert-it-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .expert-it-description {
+        font-size: 1rem;
+        text-align: left;
     }
     
     .intro-text .section-title,

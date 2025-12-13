@@ -10,6 +10,7 @@ const ContactForm = () => {
         service: '',
         message: ''
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -18,18 +19,72 @@ const ContactForm = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        alert('Thank you for your inquiry! We will get back to you soon.');
-        setFormData({
-            name: '',
-            email: '',
-            company: '',
-            phone: '',
-            service: '',
-            message: ''
-        });
+        setIsSubmitting(true);
+
+        // Resend API Key
+        const RESEND_API_KEY = process.env.REACT_APP_RESEND_API_KEY || 're_LCgDksyB_2ii31xZcbNvJy8LoN5AxKwx3';
+
+        // Check if Resend is configured
+        if (RESEND_API_KEY === 'YOUR_RESEND_API_KEY') {
+            alert('Email service is not configured. Please set up Resend API key in .env file as REACT_APP_RESEND_API_KEY');
+            setIsSubmitting(false);
+            return;
+        }
+
+        try {
+            // Prepare email content
+            const emailContent = `
+                <h2>New Contact Form Submission</h2>
+                <p><strong>Name:</strong> ${formData.name}</p>
+                <p><strong>Email:</strong> ${formData.email}</p>
+                <p><strong>Company:</strong> ${formData.company || 'N/A'}</p>
+                <p><strong>Phone:</strong> ${formData.phone || 'N/A'}</p>
+                <p><strong>Service Interested:</strong> ${formData.service || 'N/A'}</p>
+                <p><strong>Message:</strong></p>
+                <p>${formData.message.replace(/\n/g, '<br>')}</p>
+            `;
+
+            // Send email using Resend REST API
+            const response = await fetch('https://api.resend.com/emails', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${RESEND_API_KEY}`
+                },
+                body: JSON.stringify({
+                    from: 'onboarding@resend.dev', // Resend default email for testing
+                    to: ['support@macroencoder.com', 'amankk0007@gmail.com'],
+                    reply_to: formData.email,
+                    subject: `New Contact Form Submission from ${formData.name}`,
+                    html: emailContent,
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                console.error('Resend API Error:', data);
+                throw new Error(data.message || data.error?.message || 'Failed to send email');
+            }
+
+            alert('Thank you for your inquiry! We will get back to you soon.');
+            setFormData({
+                name: '',
+                email: '',
+                company: '',
+                phone: '',
+                service: '',
+                message: ''
+            });
+        } catch (error) {
+            console.error('Resend Error:', error);
+            const errorMessage = error.message || 'Unknown error occurred';
+            alert(`There was an error sending your message: ${errorMessage}. Please try again or contact us directly at support@macroencoder.com`);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -119,7 +174,9 @@ const ContactForm = () => {
                                 required
                             ></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary btn-submit">Submit</button>
+                        <button type="submit" className="btn btn-primary btn-submit" disabled={isSubmitting}>
+                            {isSubmitting ? 'Sending...' : 'Submit'}
+                        </button>
                     </form>
                 </div>
             </div>
