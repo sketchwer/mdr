@@ -37,7 +37,7 @@
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.2;
-    background: var(--bg-gradient);
+    background: linear-gradient(135deg, #771313 0%, #a01a1a 50%, #771313 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -96,7 +96,7 @@
     font-weight: 800;
     margin-bottom: 30px;
     color: var(--text-dark);
-    background: var(--bg-gradient);
+    background: linear-gradient(135deg, #771313 0%, #a01a1a 50%, #771313 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -276,7 +276,7 @@
 
 .tech-badge {
     padding: 8px 16px;
-    background: var(--bg-gradient);
+    background: linear-gradient(135deg, #771313 0%, #a01a1a 50%, #771313 100%);
     color: white;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -284,7 +284,7 @@
 }
 
 .cta-card {
-    background: var(--bg-gradient);
+    background: linear-gradient(135deg, #771313 0%, #a01a1a 50%, #771313 100%);
     color: white;
     border: none;
 }

@@ -6,7 +6,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#6a1b9a" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <path d="M20 20 L25 25 L30 20 L35 25 L30 30 L25 25" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                     <circle cx="30" cy="35" r="3" fill="white"/>
                     <path d="M25 40 L35 40" stroke="white" strokeWidth="2" strokeLinecap="round"/>
@@ -23,9 +23,9 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#ff6b35" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <rect x="18" y="18" width="24" height="24" rx="2" fill="white"/>
-                    <path d="M25 25 L30 30 L35 25" stroke="#ff6b35" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                    <path d="M25 25 L30 30 L35 25" stroke="#771313" strokeWidth="2" strokeLinecap="round" fill="none"/>
                 </svg>
             ),
             title: "Zoho Creator Solutions",
@@ -39,7 +39,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#6a1b9a" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <circle cx="30" cy="25" r="6" fill="white"/>
                     <path d="M20 35 L25 40 L30 35 L35 40" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                 </svg>
@@ -55,7 +55,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#4a148c" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <rect x="18" y="20" width="24" height="18" rx="1" stroke="white" strokeWidth="2" fill="none"/>
                     <path d="M20 25 L28 25 M20 28 L26 28 M20 31 L30 31" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
                     <circle cx="35" cy="27" r="2" fill="white"/>
@@ -72,7 +72,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#ff6b35" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <path d="M25 20 L30 15 L35 20 L30 25 Z" fill="white"/>
                     <circle cx="25" cy="35" r="3" fill="white"/>
                     <circle cx="30" cy="35" r="3" fill="white"/>
@@ -91,7 +91,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#7b2cbf" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <circle cx="30" cy="25" r="5" fill="white"/>
                     <path d="M22 35 Q30 30 38 35" stroke="white" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
                     <path d="M20 42 L40 42" stroke="white" strokeWidth="2" strokeLinecap="round"/>
@@ -108,8 +108,8 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#1a1a1a" rx="4"/>
-                    <rect x="20" y="20" width="20" height="20" rx="2" fill="#6a1b9a"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
+                    <rect x="20" y="20" width="20" height="20" rx="2" fill="#771313"/>
                     <path d="M25 25 L30 30 L35 25" stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
                 </svg>
             ),
@@ -124,7 +124,7 @@ const ZohoCompetency = () => {
         {
             icon: (
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect x="10" y="10" width="40" height="40" fill="#ff6b35" rx="4"/>
+                    <rect x="10" y="10" width="40" height="40" fill="#771313" rx="4"/>
                     <rect x="18" y="18" width="10" height="10" rx="1" fill="white"/>
                     <rect x="32" y="18" width="10" height="10" rx="1" fill="white"/>
                     <rect x="18" y="32" width="10" height="10" rx="1" fill="white"/>

@@ -122,16 +122,21 @@
     align-items: center;
 }
 
-/* Main Navbar - Professional White Background */
+/* Main Navbar - Advanced & Beautiful */
 .navbar {
-    background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.08),
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 -1px 0 rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(119, 19, 19, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 
 .navbar-background {
@@ -139,11 +144,14 @@
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.08);
-    border-bottom-color: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.99);
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+    box-shadow: 
+        0 8px 40px rgba(0, 0, 0, 0.12),
+        0 2px 0 rgba(255, 255, 255, 0.95) inset,
+        0 -2px 0 rgba(119, 19, 19, 0.1);
+    border-bottom-color: rgba(119, 19, 19, 0.15);
 }
 
 .navbar .container {
@@ -235,12 +243,13 @@
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%) scaleX(0);
-    width: 50%;
-    height: 2px;
-    background: #334155;
-    border-radius: 1px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #771313 0%, #9a1a1a 100%);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
+    box-shadow: 0 2px 8px rgba(119, 19, 19, 0.3);
 }
 
 .nav-menu a:hover .nav-link-underline,
@@ -255,7 +264,8 @@
 .nav-menu a.active .nav-link-text,
 .nav-link-dropdown:hover .nav-link-text,
 .nav-link-dropdown.active .nav-link-text {
-    color: #334155;
+    color: #771313;
+    font-weight: 600;
 }
 
 .nav-link-dropdown {
@@ -275,33 +285,32 @@
     opacity: 1;
 }
 
-/* Dropdown Menus - Professional & Advanced */
+/* Dropdown Menus - Advanced & Beautiful */
 .services-dropdown,
 .industries-dropdown {
     position: absolute;
-    top: calc(100% + 12px);
+    top: calc(100% + 16px);
     left: 50%;
-    transform: translateX(-50%) translateY(-15px) scale(0.95);
-    width: 800px;
+    transform: translateX(-50%) translateY(-20px) scale(0.95);
+    width: auto;
+    min-width: 280px;
     max-width: calc(100vw - 60px);
-    background: linear-gradient(180deg, #ffffff 0%, #fafbfc 50%, #f8fafc 100%);
-    border: 1px solid rgba(30, 41, 59, 0.08);
-    border-radius: 14px;
-    padding: 28px 32px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
+    border: 1px solid rgba(119, 19, 19, 0.15);
+    border-radius: 16px;
+    padding: 12px;
     margin-top: 0;
     box-shadow: 
         0 20px 60px rgba(0, 0, 0, 0.12),
-        0 8px 24px rgba(0, 0, 0, 0.08),
-        0 0 0 1px rgba(0, 0, 0, 0.03),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.02);
+        0 8px 24px rgba(119, 19, 19, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
     z-index: 1001;
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    overflow-y: auto;
-    overflow-x: visible;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: visible;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
@@ -334,12 +343,11 @@
     visibility: visible;
     transform: translateX(-50%) translateY(0) scale(1);
     box-shadow: 
-        0 24px 72px rgba(30, 41, 59, 0.16),
-        0 12px 32px rgba(0, 0, 0, 0.12),
-        0 0 0 1px rgba(30, 41, 59, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.95),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.02);
-    animation: dropdownSlideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        0 20px 60px rgba(0, 0, 0, 0.15),
+        0 10px 30px rgba(119, 19, 19, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    animation: dropdownSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .dropdown-content {
@@ -347,6 +355,96 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 36px;
     position: relative;
+}
+
+/* Simple Dropdown Menu - Clean 3 Lines */
+.dropdown-simple-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    min-width: 280px;
+}
+
+.dropdown-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    border-radius: 8px;
+    margin: 2px 0;
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: menuItemSlideIn 0.4s ease-out forwards;
+}
+
+.dropdown-menu-item:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.dropdown-menu-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.dropdown-menu-item:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+@keyframes menuItemSlideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.dropdown-menu-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleX(0);
+    width: 4px;
+    height: 60%;
+    background: linear-gradient(180deg, #771313 0%, #9a1a1a 100%);
+    border-radius: 0 4px 4px 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-menu-item:hover::before,
+.dropdown-menu-item:focus::before {
+    transform: translateY(-50%) scaleX(1);
+}
+
+.dropdown-menu-item:hover {
+    background: linear-gradient(90deg, rgba(119, 19, 19, 0.08) 0%, rgba(119, 19, 19, 0.05) 100%);
+    color: #771313;
+    padding-left: 32px;
+    transform: translateX(4px);
+}
+
+.menu-item-text {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.menu-item-arrow {
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #771313;
+    flex-shrink: 0;
+}
+
+.dropdown-menu-item:hover .menu-item-arrow {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .services-dropdown .dropdown-content {
@@ -810,39 +908,50 @@
 
 /* Contact Us Button */
 .contact-us-button {
-    background: #1e293b;
+    background: linear-gradient(135deg, #771313 0%, #9a1a1a 100%);
     color: #ffffff;
-    padding: 8px 20px;
-    border-radius: 6px;
+    padding: 10px 24px;
+    border-radius: 10px;
     font-size: 0.8125rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     text-decoration: none;
     letter-spacing: 0.03em;
-    box-shadow: 0 2px 8px rgba(30, 41, 59, 0.2);
+    box-shadow: 
+        0 4px 15px rgba(119, 19, 19, 0.3),
+        0 2px 8px rgba(119, 19, 19, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.navbar-zoho-image {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
+.contact-us-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
 }
 
-.navbar-zoho-image:hover {
-    opacity: 1;
+.contact-us-button:hover::before {
+    left: 100%;
 }
 
 .contact-us-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.3);
-    background: #334155;
+    transform: translateY(-2px);
+    box-shadow: 
+        0 8px 25px rgba(119, 19, 19, 0.4),
+        0 4px 12px rgba(119, 19, 19, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #9a1a1a 0%, #771313 100%);
 }
 
 .contact-us-button:active {
@@ -930,10 +1039,6 @@
     .contact-us-button {
         padding: 10px 20px;
         font-size: 0.75rem;
-    }
-    
-    .navbar-zoho-image {
-        width: 100px;
     }
     
     .logo-image {
@@ -1037,10 +1142,6 @@
         display: none !important;
     }
     
-    .navbar-zoho-image {
-        display: none !important;
-    }
-    
     /* Mobile Dropdown Styles */
     .services-dropdown,
     .industries-dropdown {
@@ -1078,6 +1179,20 @@
     .dropdown-content {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+    
+    .dropdown-simple-menu {
+        min-width: 100%;
+    }
+    
+    .dropdown-menu-item {
+        padding: 14px 20px;
+        font-size: 0.875rem;
+    }
+    
+    .menu-item-arrow {
+        width: 14px;
+        height: 14px;
     }
     
     .industries-dropdown .dropdown-content {

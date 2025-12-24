@@ -7,11 +7,18 @@ const Hero = () => {
         <section className="hero-section">
             <div className="hero-background">
                 <img 
-                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2084&q=80" 
-                    alt="Business Meeting" 
+                    src="/hero.png" 
+                    alt="Hero Background" 
                     className="hero-bg-image"
                 />
                 <div className="hero-overlay"></div>
+            </div>
+            <div className="hero-zoho-badge">
+                <img 
+                    src="/zoho.png" 
+                    alt="Zoho Authorized Partner" 
+                    className="hero-zoho-image"
+                />
             </div>
             <div className="container">
                 <div className="hero-content">
@@ -23,7 +30,7 @@ const Hero = () => {
                             Empower your business with AI intelligence that fuses technology and strategy—driving innovation, efficiency, and growth with a competitive edge.
                         </p>
                         <Link to="/contact" className="hero-cta-button">
-                            GET QUOTE
+                            Contact
                         </Link>
                     </div>
                 </div>

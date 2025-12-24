@@ -217,10 +217,70 @@ const CaseStudies = () => {
             technology: 'Zoho CRM, Zoho Marketing',
             image: "/case study/sonder digital.png",
             category: 'marketing'
+        },
+        {
+            id: 22,
+            logo: 'Freelancer Management Platform',
+            brand: 'OPERATIONS AUTOMATION',
+            title: 'Scalable Lead Assignment & Freelancer Management System',
+            industry: 'Consulting & Support',
+            technology: 'Zoho CRM, Zoho Creator, Custom Widgets',
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            category: 'operations'
+        },
+        {
+            id: 23,
+            logo: 'E-Commerce Retailer',
+            brand: 'ECOMMERCE AUTOMATION',
+            title: 'Shopify–Zoho ERP Integration',
+            industry: 'E‑Commerce',
+            technology: 'Shopify, Zoho CRM, Zoho Inventory, Zoho Analytics',
+            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            category: 'ecommerce'
+        },
+        {
+            id: 24,
+            logo: 'Travel & Tourism Agency',
+            brand: 'SALES & LEAD AUTOMATION',
+            title: 'AI-Powered Travel Sales Automation',
+            industry: 'Travel & Tourism',
+            technology: 'Zoho CRM, AI Chatbot, Zoho Analytics',
+            image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2128&q=80",
+            category: 'travel'
+        },
+        {
+            id: 25,
+            logo: 'Fintech Money Transfer Service',
+            brand: 'FINTECH AUTOMATION',
+            title: 'Centralized CRM & Analytics for Cross-Border Money Transfer',
+            industry: 'Accounting & Finance',
+            technology: 'Zoho CRM, Zoho Analytics, Application Integration',
+            image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            category: 'fintech'
+        },
+        {
+            id: 26,
+            logo: 'Insurance & Mortgage Brokerage',
+            brand: 'CRM & SUPPORT AUTOMATION',
+            title: 'Insurance & Mortgage Lead Management Automation',
+            industry: 'Enterprise CRM',
+            technology: 'Zoho CRM, Zoho Desk, Zoho Forms',
+            image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            category: 'crm'
+        },
+        {
+            id: 27,
+            logo: 'Financial Services Company',
+            brand: 'FINANCE WORKFLOW AUTOMATION',
+            title: 'Order-to-Cash Finance Automation',
+            industry: 'Finance Automation',
+            technology: 'Zoho CRM, Zoho Books',
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            category: 'finance'
         }
     ];
 
-    const technologies = ['All Technologies', 'Zoho CRM', 'Zoho Books', 'Zoho Creator', 'Zoho Desk', 'Zoho Recruit', 'Zoho Meeting', 'Zoho Bookings', 'Zoho Campaigns', 'Zoho Marketing', 'Zoho Analytics', 'Zoho Billing', 'Zoho Projects', 'Shopify', 'SPF', 'DKIM'];
+    const technologies = ['All Technologies', 'Zoho CRM', 'Zoho Books', 'Zoho Creator', 'Zoho Desk', 'Zoho Recruit', 'Zoho Meeting', 'Zoho Bookings', 'Zoho Campaigns', 'Zoho Marketing', 'Zoho Analytics', 'Zoho Billing', 'Zoho Projects', 'Shopify', 'SPF', 'DKIM', 'Zoho Inventory', 'AI Chatbot', 'Custom Widgets', 'Application Integration', 'Zoho Forms'];
     const industries = ['All Industries', 'Finance Automation', 'Service & Training', 'Accounting & Finance', 'Retail & Multi‑Store', 'Email Infrastructure', 'Training & Education', 'Advertising & ERP', 'Travel & Tourism', 'Customer Support', 'Business Consulting', 'Recruitment', 'Enterprise CRM', 'E‑Commerce', 'Consulting & Support', 'Healthcare', 'Automobile', 'Interior Design', 'Digital Marketing'];
 
     const filteredStudies = caseStudies.filter(study => {
@@ -305,7 +365,13 @@ const CaseStudies = () => {
                             18: '/case-studies/mywork',
                             19: '/case-studies/matter-mind-decor',
                             20: '/case-studies/la-petite-foret',
-                            21: '/case-studies/sonder-digital'
+                            21: '/case-studies/sonder-digital',
+                            22: '/case-studies/freelancer-management',
+                            23: '/case-studies/shopify-zoho-erp',
+                            24: '/case-studies/ai-travel-sales',
+                            25: '/case-studies/cross-border-money-transfer',
+                            26: '/case-studies/insurance-mortgage-lead',
+                            27: '/case-studies/order-to-cash-finance'
                         };
                         const route = caseStudyRoutes[study.id] || '/case-studies';
                         

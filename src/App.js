@@ -87,6 +87,10 @@ import BusinessWebsiteDevelopment from './pages/Services/BusinessWebsiteDevelopm
 import LandingPageDesign from './pages/Services/LandingPageDesign/LandingPageDesign';
 import WebsiteRedesign from './pages/Services/WebsiteRedesign/WebsiteRedesign';
 import WebsiteMaintenance from './pages/Services/WebsiteMaintenance/WebsiteMaintenance';
+// Main Service Category Pages
+import ZohoSolutions from './pages/Services/ZohoSolutions/ZohoSolutions';
+import SoftwareDevelopment from './pages/Services/SoftwareDevelopment/SoftwareDevelopment';
+import AIAutomation from './pages/Services/AIAutomation/AIAutomation';
 // Case Studies
 import PausProjectCaseStudy from './pages/CaseStudies/PausProjectCaseStudy/PausProjectCaseStudy';
 import CleverCafeCaseStudy from './pages/CaseStudies/CleverCafeCaseStudy/CleverCafeCaseStudy';
@@ -109,6 +113,12 @@ import MyWorkCaseStudy from './pages/CaseStudies/MyWorkCaseStudy/MyWorkCaseStudy
 import MatterMindDecorCaseStudy from './pages/CaseStudies/MatterMindDecorCaseStudy/MatterMindDecorCaseStudy';
 import LaPetiteForetCaseStudy from './pages/CaseStudies/LaPetiteForetCaseStudy/LaPetiteForetCaseStudy';
 import SonderDigitalCaseStudy from './pages/CaseStudies/SonderDigitalCaseStudy/SonderDigitalCaseStudy';
+import FreelancerManagementCaseStudy from './pages/CaseStudies/FreelancerManagementCaseStudy/FreelancerManagementCaseStudy';
+import ShopifyZohoERPCaseStudy from './pages/CaseStudies/ShopifyZohoERPCaseStudy/ShopifyZohoERPCaseStudy';
+import AITravelSalesCaseStudy from './pages/CaseStudies/AITravelSalesCaseStudy/AITravelSalesCaseStudy';
+import CrossBorderMoneyTransferCaseStudy from './pages/CaseStudies/CrossBorderMoneyTransferCaseStudy/CrossBorderMoneyTransferCaseStudy';
+import InsuranceMortgageLeadCaseStudy from './pages/CaseStudies/InsuranceMortgageLeadCaseStudy/InsuranceMortgageLeadCaseStudy';
+import OrderToCashFinanceCaseStudy from './pages/CaseStudies/OrderToCashFinanceCaseStudy/OrderToCashFinanceCaseStudy';
 // Industries
 import TilesIndustry from './pages/Industries/TilesIndustry/TilesIndustry';
 import FurnitureIndustry from './pages/Industries/FurnitureIndustry/FurnitureIndustry';
@@ -133,6 +143,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
+          {/* Main Service Category Pages */}
+          <Route path="/services/zoho-solutions" element={<ZohoSolutions />} />
+          <Route path="/services/software-development" element={<SoftwareDevelopment />} />
+          <Route path="/services/ai-automation" element={<AIAutomation />} />
           {/* Magento Services */}
           <Route path="/services/magento-development" element={<MagentoDevelopment />} />
           <Route path="/services/magento-2-migration" element={<Magento2Migration />} />
@@ -231,6 +245,12 @@ function App() {
           <Route path="/case-studies/matter-mind-decor" element={<MatterMindDecorCaseStudy />} />
           <Route path="/case-studies/la-petite-foret" element={<LaPetiteForetCaseStudy />} />
           <Route path="/case-studies/sonder-digital" element={<SonderDigitalCaseStudy />} />
+          <Route path="/case-studies/freelancer-management" element={<FreelancerManagementCaseStudy />} />
+          <Route path="/case-studies/shopify-zoho-erp" element={<ShopifyZohoERPCaseStudy />} />
+          <Route path="/case-studies/ai-travel-sales" element={<AITravelSalesCaseStudy />} />
+          <Route path="/case-studies/cross-border-money-transfer" element={<CrossBorderMoneyTransferCaseStudy />} />
+          <Route path="/case-studies/insurance-mortgage-lead" element={<InsuranceMortgageLeadCaseStudy />} />
+          <Route path="/case-studies/order-to-cash-finance" element={<OrderToCashFinanceCaseStudy />} />
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/industries/tiles" element={<TilesIndustry />} />
           <Route path="/industries/furniture" element={<FurnitureIndustry />} />

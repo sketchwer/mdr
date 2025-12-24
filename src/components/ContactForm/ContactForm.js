@@ -23,50 +23,28 @@ const ContactForm = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Resend API Key
-        const RESEND_API_KEY = process.env.REACT_APP_RESEND_API_KEY || 're_LCgDksyB_2ii31xZcbNvJy8LoN5AxKwx3';
-
-        // Check if Resend is configured
-        if (RESEND_API_KEY === 'YOUR_RESEND_API_KEY') {
-            alert('Email service is not configured. Please set up Resend API key in .env file as REACT_APP_RESEND_API_KEY');
-            setIsSubmitting(false);
-            return;
-        }
-
         try {
-            // Prepare email content
-            const emailContent = `
-                <h2>New Contact Form Submission</h2>
-                <p><strong>Name:</strong> ${formData.name}</p>
-                <p><strong>Email:</strong> ${formData.email}</p>
-                <p><strong>Company:</strong> ${formData.company || 'N/A'}</p>
-                <p><strong>Phone:</strong> ${formData.phone || 'N/A'}</p>
-                <p><strong>Service Interested:</strong> ${formData.service || 'N/A'}</p>
-                <p><strong>Message:</strong></p>
-                <p>${formData.message.replace(/\n/g, '<br>')}</p>
-            `;
-
-            // Send email using Resend REST API
-            const response = await fetch('https://api.resend.com/emails', {
+            // Send email using backend API endpoint
+            const response = await fetch('http://localhost:5000/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${RESEND_API_KEY}`
                 },
                 body: JSON.stringify({
-                    from: 'onboarding@resend.dev', // Resend default email for testing
-                    to: ['support@macroencoder.com', 'amankk0007@gmail.com'],
-                    reply_to: formData.email,
-                    subject: `New Contact Form Submission from ${formData.name}`,
-                    html: emailContent,
+                    name: formData.name,
+                    email: formData.email,
+                    company: formData.company,
+                    phone: formData.phone,
+                    service: formData.service,
+                    message: formData.message,
                 })
             });
 
             const data = await response.json();
 
             if (!response.ok) {
-                console.error('Resend API Error:', data);
-                throw new Error(data.message || data.error?.message || 'Failed to send email');
+                console.error('API Error:', data);
+                throw new Error(data.error || 'Failed to send email');
             }
 
             alert('Thank you for your inquiry! We will get back to you soon.');

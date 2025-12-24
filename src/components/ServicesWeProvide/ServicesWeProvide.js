@@ -6,24 +6,24 @@ const ServicesWeProvide = () => {
     const services = [
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
                 </svg>
             ),
-            title: "Smart Automations & Integrations",
+            title: <>Smart AI Automations, Integrations<br />& Document Intelligence</>,
             link: "/services/smart-automations",
             subServices: [
-                "Connect all your apps and make daily work automatic",
-                "AI, Make.com, and API integrations for seamless workflows",
-                "Automated updates, approvals, reminders, and data movement",
-                "Everything works together smoothly without manual effort"
+                "Connect all your apps like Zoho one, CRM, accounting tools, JotForm, Make.com etc. to make daily work fully automatic",
+                "AI-powered workflows using automation tools and APIs",
+                "Scan and read any document with AI and smart OCR for instant data extraction",
+                "Automated updates, approvals, reminders, and system syncing without manual effort"
             ]
         },
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                     <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                     <line x1="12" y1="22.08" x2="12" y2="12"/>
@@ -40,7 +40,7 @@ const ServicesWeProvide = () => {
         },
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                     <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                     <line x1="12" y1="22.08" x2="12" y2="12"/>
@@ -57,24 +57,7 @@ const ServicesWeProvide = () => {
         },
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                    <line x1="8" y1="21" x2="16" y2="21"/>
-                    <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-            ),
-            title: "AI Document Scanning, Reading & Automation",
-            link: "/services/ai-document-scanning",
-            subServices: [
-                "Scan any document — invoice, bill, form, ID, report, or receipt",
-                "OpenAI and smart OCR for instant data extraction",
-                "No typing, no manual checking — fully automated",
-                "Saves your team hours of effort every day"
-            ]
-        },
-        {
-            icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
@@ -91,7 +74,7 @@ const ServicesWeProvide = () => {
         },
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                     <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                     <line x1="12" y1="22.08" x2="12" y2="12"/>
@@ -108,36 +91,19 @@ const ServicesWeProvide = () => {
         },
         {
             icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                     <line x1="8" y1="21" x2="16" y2="21"/>
                     <line x1="12" y1="17" x2="12" y2="21"/>
                 </svg>
             ),
-            title: "Advanced Java Development",
-            link: "/services/advanced-java-development",
+            title: "Enterprise Software & Custom Application Development",
+            link: "/services/enterprise-software-development",
             subServices: [
-                "Secure, scalable, enterprise-grade Java applications",
-                "Spring Boot, MVC, WebFlux, Hibernate, Struts, and JSF",
-                "High-performance backends and powerful custom software",
-                "Perfect for businesses needing robust solutions"
-            ]
-        },
-        {
-            icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                    <line x1="8" y1="21" x2="16" y2="21"/>
-                    <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-            ),
-            title: "Custom Application Development",
-            link: "/services/custom-application-development",
-            subServices: [
-                "ERP, HRMS, attendance, inventory, finance, and production",
-                "Service management and complete automation",
-                "Clean UI with fast performance",
-                "Built uniquely for your business needs"
+                "Secure and scalable enterprise software built using advanced Java technologies",
+                "Custom business applications including ERP, HRMS, attendance, inventory, finance, production, and EDC systems",
+                "High-performance backend development with strong integrations and automation",
+                "Clean, easy-to-use applications designed around your real business processes"
             ]
         }
     ];
