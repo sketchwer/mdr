@@ -1,207 +1,370 @@
+/* ============================================
+   HERO SECTION - REDESIGNED
+   ============================================ */
+
 .hero-section {
-    position: relative;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: #f5f5f5;
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 120px 0;
+  overflow: hidden;
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.hero-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
 }
 
-.hero-bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
-    z-index: 2;
+/* ============================================
+   LEFT SECTION - TEXT CONTENT
+   ============================================ */
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
 }
 
-.hero-zoho-badge {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    z-index: 5;
-    animation: fadeInUp 0.8s ease-out;
-}
-
-.hero-zoho-image {
-    width: 280px;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease;
-}
-
-.hero-zoho-image:hover {
-    transform: scale(1.05);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    padding: 80px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.hero-text-section {
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.12);
-    padding: 60px 50px;
-    border-radius: 12px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    z-index: 4;
-    backdrop-filter: blur(0px);
-}
-
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    line-height: 1.2;
-    text-align: center;
+.hero-heading {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, #000000 0%, #000000 40%, #ff6b35 70%, #ff8c42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
-    line-height: 1.2;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 40px;
+  max-width: 580px;
+  font-weight: 400;
 }
 
-.hero-description {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
+.hero-cta-btn {
+  background: linear-gradient(135deg, #1a1a1a 0%, #334155 100%);
+  color: #ffffff;
+  padding: 18px 44px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  width: fit-content;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-cta-button {
-    display: inline-block;
-    background: #1e293b;
-    color: #ffffff;
-    padding: 16px 40px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
+.hero-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 
-.hero-cta-button:hover {
-    background: #334155;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(30, 41, 59, 0.25);
+.hero-cta-btn:hover::before {
+  left: 100%;
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #9a1a1a 0%, #771313 100%);
+}
+
+.hero-cta-btn:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   RIGHT SECTION - CARDS
+   ============================================ */
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+}
+
+.hero-cards-wrapper {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, rgba(0,255,136,0.04) 0%, transparent 80%);
+}
+
+/* ============================================
+   FLOATING ANIMATIONS - Removed (using JS animation)
+   ============================================ */
+
+/* ============================================
+   HERO CARDS
+   ============================================ */
+
+.hero-card {
+  position: absolute;
+  background: rgba(12, 18, 35, 0.96);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 240px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  transition: box-shadow 0.4s cubic-bezier(.4,2,.6,1), border-color 0.3s;
+  will-change: transform, box-shadow;
+  color: #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hero-card:hover::before {
+  opacity: 1;
+}
+
+.hero-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-card-active {
+  box-shadow: 
+    0 0 40px 10px var(--card-color),
+    0 10px 30px rgba(0,0,0,0.4);
+  border-color: #fff;
+}
+
+/* ============================================
+   CARD CONTENT
+   ============================================ */
+
+.hero-card-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #00ffc8, #00a8ff);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-card-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1400px) {
+  .hero-container {
+    padding: 0 60px;
+  }
+  
+  .hero-wrapper {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  
+  .hero-wrapper {
+    gap: 50px;
+  }
+  
+  .hero-cards-wrapper {
+    gap: 24px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .hero-content {
-        flex-direction: column;
-        gap: 40px;
-    }
+  .hero-section {
+    padding: 80px 0;
+  }
+  
+  .hero-container {
+    padding: 0 30px;
+  }
+  
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .hero-left {
+    align-items: center;
+  }
+  
+  .hero-subtitle {
+    max-width: 100%;
+  }
+  
+  .hero-cta-btn {
+    margin: 0 auto;
+  }
+  
+  .hero-right {
+    justify-content: center;
+  }
+  
+  .hero-cards-wrapper {
+    width: 280px;
+    height: 400px;
+  }
+  
+  .hero-card {
+    width: 200px;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        min-height: 500px;
-    }
-    
-    .hero-content {
-        padding: 60px 0;
-        gap: 30px;
-    }
-    
-    .hero-text-section {
-        padding: 35px 25px;
-        max-width: 100%;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 2.25rem;
-    }
-    
-    .hero-description {
-        font-size: 1rem;
-    }
-    
-    .hero-cta-button {
-        padding: 14px 32px;
-        font-size: 0.9375rem;
-    }
-    
-    .hero-zoho-badge {
-        top: 15px;
-        right: 20px;
-    }
-    
-    .hero-zoho-image {
-        width: 200px;
-    }
+  .hero-section {
+    padding: 60px 0;
+    min-height: auto;
+  }
+  
+  .hero-container {
+    padding: 0 20px;
+  }
+  
+  .hero-wrapper {
+    gap: 40px;
+  }
+  
+  .hero-heading {
+    font-size: clamp(2.2rem, 8vw, 3.5rem);
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-cta-btn {
+    padding: 16px 36px;
+    font-size: 1rem;
+  }
+  
+  .hero-cards-wrapper {
+    width: 260px;
+    height: 350px;
+  }
+  
+  .hero-card {
+    width: 180px;
+    padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-text-section {
-        padding: 30px 20px;
-    }
-    
-    .hero-title {
-        font-size: 1.75rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.875rem;
-    }
-    
-    .hero-zoho-badge {
-        top: 10px;
-        right: 10px;
-    }
-    
-    .hero-zoho-image {
-        width: 150px;
-    }
+  .hero-section {
+    padding: 50px 0;
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .hero-cta-btn {
+    padding: 14px 32px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero-cards-wrapper {
+    width: 260px;
+    height: 350px;
+  }
+  
+  .hero-card {
+    width: 180px;
+    padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+  }
+  
+  .hero-card-title {
+    font-size: 0.8rem;
+  }
+  
+  .hero-card-text {
+    font-size: 0.65rem;
+  }
 }

@@ -67,6 +67,13 @@
     font-weight: 700;
     color: #1a1a1a;
     flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.partnership-icon {
+    font-size: 2rem;
 }
 
 .job-type {
@@ -131,6 +138,84 @@
     box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
+.benefits-list {
+    margin: 24px 0;
+}
+
+.benefits-list h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.benefits-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.8;
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #771313;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.partnership-cta {
+    text-align: center;
+    margin-top: 80px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.partnership-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.partnership-cta p {
+    font-size: 1.125rem;
+    color: #64748b;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 32px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #771313 0%, #9a1a1a 100%);
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(119, 19, 19, 0.25);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #9a1a1a 0%, #771313 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(119, 19, 19, 0.35);
+}
+
 @media (max-width: 768px) {
     .careers-content {
         padding: 60px 0;
@@ -151,6 +236,24 @@
     
     .job-type {
         align-self: flex-start;
+    }
+    
+    .partnership-cta {
+        padding: 40px 24px;
+        margin-top: 60px;
+    }
+    
+    .partnership-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .partnership-cta p {
+        font-size: 1rem;
+    }
+    
+    .cta-button {
+        padding: 14px 32px;
+        font-size: 1rem;
     }
 }
 

@@ -225,14 +225,28 @@
 .service-icon-industry {
     width: 80px;
     height: 80px;
-    background: var(--bg-gradient);
+    background: #771313 !important;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     margin: 0 auto 25px;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 24px rgba(119, 19, 19, 0.25);
+}
+
+.service-icon-industry svg {
+    width: 40px;
+    height: 40px;
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
+}
+
+.service-icon-industry svg * {
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
 }
 
 .service-card-industry h3 {
@@ -302,14 +316,28 @@
 .solution-icon-industry {
     width: 60px;
     height: 60px;
-    background: var(--bg-gradient);
+    background: #771313 !important;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     flex-shrink: 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 24px rgba(119, 19, 19, 0.25);
+}
+
+.solution-icon-industry svg {
+    width: 30px;
+    height: 30px;
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
+}
+
+.solution-icon-industry svg * {
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
 }
 
 .solution-content-industry {
@@ -383,14 +411,28 @@
 .api-icon {
     width: 60px;
     height: 60px;
-    background: var(--bg-gradient);
+    background: #771313 !important;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     margin-bottom: 20px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 8px 24px rgba(119, 19, 19, 0.25);
+}
+
+.api-icon svg {
+    width: 30px;
+    height: 30px;
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
+}
+
+.api-icon svg * {
+    stroke: #ffffff !important;
+    fill: none !important;
+    color: #ffffff !important;
 }
 
 .api-card h3 {

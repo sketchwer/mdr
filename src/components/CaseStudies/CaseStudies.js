@@ -277,6 +277,76 @@ const CaseStudies = () => {
             technology: 'Zoho CRM, Zoho Books',
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
             category: 'finance'
+        },
+        {
+            id: 28,
+            logo: 'ZiMoney',
+            brand: 'FINANCE AUTOMATION',
+            title: 'Fintech CRM, Compliance & Analytics Transformation',
+            industry: 'Accounting & Finance',
+            technology: 'Zoho CRM, Zoho Desk, Zoho Analytics, API & Webhooks',
+            image: "/case study/zi-money.jpg",
+            category: 'fintech'
+        },
+        {
+            id: 29,
+            logo: "Amnie's Project",
+            brand: 'OPERATIONS AUTOMATION',
+            title: 'Automated Lead-to-Freelancer Assignment & Portal Management System',
+            industry: 'Business Consulting',
+            technology: 'Zoho CRM, Zoho Creator, Custom CRM Widget, APIs',
+            image: "/case study/Amnie Project .jpg",
+            category: 'operations'
+        },
+        {
+            id: 30,
+            logo: 'VEHK Axle',
+            brand: 'ENTERPRISE AUTOMATION',
+            title: 'Smart Franchise & Operations Management System',
+            industry: 'Automobile',
+            technology: 'Zoho One, Custom CRM Widget, Zoho Analytics',
+            image: "/case study/VEHK Axle .jpg",
+            category: 'enterprise'
+        },
+        {
+            id: 31,
+            logo: 'SHIFT Program',
+            brand: 'TRAINING & EDUCATION AUTOMATION',
+            title: 'End-to-End Client Journey Automation',
+            industry: 'Training & Education',
+            technology: 'CRM Automation, WhatsApp Automation, Payment Systems',
+            image: "/case study/shift program.jpg",
+            category: 'training'
+        },
+        {
+            id: 32,
+            logo: 'BlueTerra',
+            brand: 'AI & LEAD AUTOMATION',
+            title: 'AI-Enabled Franchise Lead Management Platform',
+            industry: 'Retail & Multi-Store',
+            technology: 'Zoho CRM, AI Lead Scoring, Custom Website Widget',
+            image: "/case study/blueterra.jpg",
+            category: 'retail'
+        },
+        {
+            id: 33,
+            logo: 'Saintly Trends',
+            brand: 'ECOMMERCE AUTOMATION',
+            title: 'Shopify–Zoho One Commerce Automation',
+            industry: 'E‑Commerce',
+            technology: 'Shopify, Zoho One, Shiprocket, WhatsApp API',
+            image: "/case study/Saintly Trends .jpg",
+            category: 'ecommerce'
+        },
+        {
+            id: 34,
+            logo: 'Creative Automation Dubai',
+            brand: 'ADVERTISING & ERP',
+            title: 'Unified Business Automation Platform',
+            industry: 'Advertising & ERP',
+            technology: 'Zoho Creator, Zoho CRM, Zoho Books, Zoho People',
+            image: "/case study/Creative Automation Dubai .jpg",
+            category: 'advertising'
         }
     ];
 
@@ -371,7 +441,14 @@ const CaseStudies = () => {
                             24: '/case-studies/ai-travel-sales',
                             25: '/case-studies/cross-border-money-transfer',
                             26: '/case-studies/insurance-mortgage-lead',
-                            27: '/case-studies/order-to-cash-finance'
+                            27: '/case-studies/order-to-cash-finance',
+                            28: '/case-studies/zimoney-fintech',
+                            29: '/case-studies/amnie-project',
+                            30: '/case-studies/vehk-axle',
+                            31: '/case-studies/shift-program',
+                            32: '/case-studies/blueterra',
+                            33: '/case-studies/saintly-trends',
+                            34: '/case-studies/creative-automation-dubai'
                         };
                         const route = caseStudyRoutes[study.id] || '/case-studies';
                         

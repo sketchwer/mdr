@@ -119,6 +119,13 @@ import AITravelSalesCaseStudy from './pages/CaseStudies/AITravelSalesCaseStudy/A
 import CrossBorderMoneyTransferCaseStudy from './pages/CaseStudies/CrossBorderMoneyTransferCaseStudy/CrossBorderMoneyTransferCaseStudy';
 import InsuranceMortgageLeadCaseStudy from './pages/CaseStudies/InsuranceMortgageLeadCaseStudy/InsuranceMortgageLeadCaseStudy';
 import OrderToCashFinanceCaseStudy from './pages/CaseStudies/OrderToCashFinanceCaseStudy/OrderToCashFinanceCaseStudy';
+import ZiMoneyFintechCaseStudy from './pages/CaseStudies/ZiMoneyFintechCaseStudy/ZiMoneyFintechCaseStudy';
+import AmnieProjectCaseStudy from './pages/CaseStudies/AmnieProjectCaseStudy/AmnieProjectCaseStudy';
+import VEHKAxleCaseStudy from './pages/CaseStudies/VEHKAxleCaseStudy/VEHKAxleCaseStudy';
+import SHIFTProgramCaseStudy from './pages/CaseStudies/SHIFTProgramCaseStudy/SHIFTProgramCaseStudy';
+import BlueTerraCaseStudy from './pages/CaseStudies/BlueTerraCaseStudy/BlueTerraCaseStudy';
+import SaintlyTrendsCaseStudy from './pages/CaseStudies/SaintlyTrendsCaseStudy/SaintlyTrendsCaseStudy';
+import CreativeAutomationDubaiCaseStudy from './pages/CaseStudies/CreativeAutomationDubaiCaseStudy/CreativeAutomationDubaiCaseStudy';
 // Industries
 import TilesIndustry from './pages/Industries/TilesIndustry/TilesIndustry';
 import FurnitureIndustry from './pages/Industries/FurnitureIndustry/FurnitureIndustry';
@@ -251,6 +258,13 @@ function App() {
           <Route path="/case-studies/cross-border-money-transfer" element={<CrossBorderMoneyTransferCaseStudy />} />
           <Route path="/case-studies/insurance-mortgage-lead" element={<InsuranceMortgageLeadCaseStudy />} />
           <Route path="/case-studies/order-to-cash-finance" element={<OrderToCashFinanceCaseStudy />} />
+          <Route path="/case-studies/zimoney-fintech" element={<ZiMoneyFintechCaseStudy />} />
+          <Route path="/case-studies/amnie-project" element={<AmnieProjectCaseStudy />} />
+          <Route path="/case-studies/vehk-axle" element={<VEHKAxleCaseStudy />} />
+          <Route path="/case-studies/shift-program" element={<SHIFTProgramCaseStudy />} />
+          <Route path="/case-studies/blueterra" element={<BlueTerraCaseStudy />} />
+          <Route path="/case-studies/saintly-trends" element={<SaintlyTrendsCaseStudy />} />
+          <Route path="/case-studies/creative-automation-dubai" element={<CreativeAutomationDubaiCaseStudy />} />
           <Route path="/industries" element={<IndustriesPage />} />
           <Route path="/industries/tiles" element={<TilesIndustry />} />
           <Route path="/industries/furniture" element={<FurnitureIndustry />} />

@@ -28,17 +28,6 @@ const Footer = () => {
                     </div>
                     
                     <div className="footer-section">
-                        <h3 className="footer-title">EXPLORE</h3>
-                        <ul className="footer-links">
-                            <li><Link to="/services">Engagement Models</Link></li>
-                            <li><Link to="/services">Solutions</Link></li>
-                            <li><Link to="/case-studies">Case Studies</Link></li>
-                            <li><Link to="/services">Skill Sets</Link></li>
-                            <li><Link to="/about">Awards & Certification</Link></li>
-                        </ul>
-                    </div>
-                    
-                    <div className="footer-section">
                         <h3 className="footer-title">CONNECT</h3>
                         <ul className="footer-contact">
                             <li>

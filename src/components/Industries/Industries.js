@@ -81,8 +81,6 @@ const Industries = () => {
     return (
         <section id="industries" className="industries">
             <div className="container">
-                <h2 className="section-title">Industries We Serve</h2>
-                <p className="section-description">Serving our clients across diverse industries</p>
                 <div className="industries-grid">
                     {industries.map((industry, index) => {
                         const industryRoutes = {

@@ -28,7 +28,7 @@
     --bg-overlay: rgba(255, 255, 255, 0.95);
     
     /* MES Logo Gradient - Blue/Purple to Orange/Red */
-    --bg-gradient: linear-gradient(135deg, #4a148c 0%, #6a1b9a 25%, #7b2cbf 50%, #ff6b35 75%, #ff8c42 100%);
+    --bg-gradient: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
     --bg-gradient-hero: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
     --bg-gradient-light: linear-gradient(135deg, rgba(74, 20, 140, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
     --bg-gradient-accent: linear-gradient(135deg, #6a1b9a 0%, #ff6b35 100%);

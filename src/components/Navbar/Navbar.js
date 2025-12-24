@@ -125,34 +125,34 @@ const Navbar = () => {
                                     <div className="dropdown-content">
                                         <div className="dropdown-section">
                                             <ul className="industries-list">
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Travel & Hospitality</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Media & Entertainment</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Logistics</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Energy & Utilities</Link></li>
+                                                <li><Link to="/industries/travel"><span className="dropdown-icon">→</span>Travel & Hospitality</Link></li>
+                                                <li><Link to="/industries/event-management"><span className="dropdown-icon">→</span>Media & Entertainment</Link></li>
+                                                <li><Link to="/industries/groceries"><span className="dropdown-icon">→</span>Logistics</Link></li>
+                                                <li><Link to="/industries/architecture"><span className="dropdown-icon">→</span>Energy & Utilities</Link></li>
                                             </ul>
                                         </div>
                                         <div className="dropdown-section">
                                             <ul className="industries-list">
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Mortgage & Lending</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Food & Beverage</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Automotive</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Sports</Link></li>
+                                                <li><Link to="/industries/real-estate"><span className="dropdown-icon">→</span>Mortgage & Lending</Link></li>
+                                                <li><Link to="/industries/groceries"><span className="dropdown-icon">→</span>Food & Beverage</Link></li>
+                                                <li><Link to="/industries/fashion"><span className="dropdown-icon">→</span>Automotive</Link></li>
+                                                <li><Link to="/industries/event-management"><span className="dropdown-icon">→</span>Sports</Link></li>
                                             </ul>
                                         </div>
                                         <div className="dropdown-section">
                                             <ul className="industries-list">
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Finance</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Banking & Payment</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Aviation</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Construction</Link></li>
+                                                <li><Link to="/industries/real-estate"><span className="dropdown-icon">→</span>Finance</Link></li>
+                                                <li><Link to="/industries/real-estate"><span className="dropdown-icon">→</span>Banking & Payment</Link></li>
+                                                <li><Link to="/industries/travel"><span className="dropdown-icon">→</span>Aviation</Link></li>
+                                                <li><Link to="/industries/architecture"><span className="dropdown-icon">→</span>Construction</Link></li>
                                             </ul>
                                         </div>
                                         <div className="dropdown-section">
                                             <ul className="industries-list">
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>E-Learning & Education</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Oil & Gas</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Healthcare</Link></li>
-                                                <li><Link to="/industries"><span className="dropdown-icon">→</span>Retail/FMCG</Link></li>
+                                                <li><Link to="/industries/education"><span className="dropdown-icon">→</span>E-Learning & Education</Link></li>
+                                                <li><Link to="/industries/architecture"><span className="dropdown-icon">→</span>Oil & Gas</Link></li>
+                                                <li><Link to="/industries/healthcare"><span className="dropdown-icon">→</span>Healthcare</Link></li>
+                                                <li><Link to="/industries/groceries"><span className="dropdown-icon">→</span>Retail/FMCG</Link></li>
                                             </ul>
                                         </div>
                                     </div>

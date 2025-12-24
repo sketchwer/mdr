@@ -7,8 +7,9 @@
 .page-hero {
     position: relative;
     padding: 120px 0 100px;
-    background: #771313;
+    background: #ffffff;
     overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .hero-background-animation {
@@ -41,7 +42,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    text-align: center;
+    text-align: left;
 }
 
 .hero-badge {
@@ -61,24 +62,29 @@
 }
 
 .hero-title {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(3.5rem, 8vw, 6rem);
     font-weight: 900;
-    color: #ffffff;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 32px;
-    line-height: 1.1;
+    line-height: 1.05;
     animation: fadeInUp 0.8s ease-out 0.1s both;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
+    text-align: left;
 }
 
 .hero-description {
     font-size: clamp(1.125rem, 2.2vw, 1.5rem);
-    color: rgba(255, 255, 255, 0.95);
-    line-height: 1.85;
+    color: #475569;
+    line-height: 1.75;
     animation: fadeInUp 1s ease-out 0.3s both;
-    max-width: 1000px;
-    margin: 0 auto 40px;
+    max-width: 700px;
+    margin: 0 0 40px 0;
     font-weight: 400;
     letter-spacing: 0.01em;
+    text-align: left;
 }
 
 .hero-features {

@@ -6,7 +6,10 @@
 .section-title {
     font-size: 1rem;
     font-weight: 600;
-    color: #771313;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-align: center;
     margin-bottom: 16px;
     letter-spacing: 0.1em;

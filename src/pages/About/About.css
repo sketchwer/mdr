@@ -1,5 +1,650 @@
 .about-page {
     width: 100%;
     overflow-x: hidden;
+    background: #ffffff;
 }
 
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.about-hero {
+    padding: 120px 0 80px;
+    background: #ffffff;
+    position: relative;
+}
+
+.about-hero .container {
+    max-width: 1200px;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.about-hero-title {
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 500;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.about-hero-description {
+    font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-hero-image-wrapper {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.about-hero-background {
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.about-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 107, 53, 0.6) 100%);
+    pointer-events: none;
+}
+
+.about-hero-cta {
+    display: inline-block;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 16px 48px;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero-cta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    background: #f8fafc;
+}
+
+/* ============================================
+   OUR GOAL SECTION
+   ============================================ */
+.about-goal-section {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.about-goal-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.goal-left-panel {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.goal-left-panel .section-label {
+    margin-bottom: 40px;
+}
+
+.goal-main-heading {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin: 0;
+}
+
+.goal-right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.goal-question {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+.goal-question strong {
+    color: #ba1c1c;
+    font-weight: 700;
+}
+
+.goal-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.goal-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+.goal-card-icon {
+    width: 56px;
+    height: 56px;
+    background: #c91f1f;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.goal-card-icon svg {
+    stroke: #ffffff;
+}
+
+.goal-card-text {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.section-label {
+    display: block;
+    font-size: 2.875rem;
+    font-weight: 800;
+    color: #111213;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.section-heading {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+/* ============================================
+   WHAT DRIVES US SECTION
+   ============================================ */
+.about-drives-us {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.drives-us-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.drives-us-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.drives-us-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.drives-us-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: #ff6b35;
+}
+
+.drives-us-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    border-radius: 16px;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.drives-us-icon svg {
+    stroke: #ffffff;
+}
+
+.drives-us-text {
+    font-size: 1.125rem;
+    color: #475569;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ============================================
+   HOW WE WORK SECTION
+   ============================================ */
+.about-how-we-work {
+    padding: 120px 0;
+    background: #f8fafc;
+}
+
+.about-how-we-work .container {
+    max-width: 1200px;
+}
+
+.about-how-we-work .section-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 60px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.how-we-work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 0;
+}
+
+.how-we-work-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.how-we-work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+.work-card-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c02522;
+    border-radius: 12px;
+    color: #ffffff;
+    position: relative;
+}
+
+.work-card-icon::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    border: 1px solid rgba(196, 32, 32, 0.08);
+    pointer-events: none;
+}
+
+.work-card-icon svg {
+    stroke: #ffffff;
+    width: 32px;
+    height: 32px;
+    stroke-width: 2;
+}
+
+.work-card-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+.work-card-description {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================
+   LEADERSHIP SECTION
+   ============================================ */
+.about-leadership {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.about-leadership .container {
+    max-width: 1000px;
+}
+
+.leadership-intro {
+    font-size: 1.25rem;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.leadership-card {
+    text-align: center;
+}
+
+.leadership-image-placeholder {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-initials {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
+.leadership-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.leadership-role {
+    font-size: 1.125rem;
+    color: #64748b;
+}
+
+/* ============================================
+   TRACK RECORD SECTION
+   ============================================ */
+.about-track-record {
+    padding: 120px 0;
+    background: #f8fafc;
+}
+
+.about-track-record .container {
+    max-width: 1200px;
+}
+
+.about-track-record .section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.track-record-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.track-record-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.track-record-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.track-record-number {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.track-record-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.track-record-description {
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.about-cta-section {
+    padding: 120px 0;
+    background: white;
+    text-align: center;
+}
+
+.cta-heading {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 18px 56px;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    background: #f8fafc;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 100px 0 80px;
+    }
+
+    .about-goal-section,
+    .about-how-we-work,
+    .about-leadership,
+    .about-track-record,
+    .about-drives-us {
+        padding: 80px 0;
+    }
+
+    .about-goal-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .goal-left-panel {
+        min-height: auto;
+        padding: 40px 30px;
+    }
+
+    .goal-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .how-we-work-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .how-we-work-card {
+        padding: 32px 24px;
+    }
+
+    .work-card-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+    }
+
+    .work-card-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .work-card-title {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+
+    .work-card-description {
+        font-size: 0.9375rem;
+    }
+
+    .about-how-we-work .section-label {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .track-record-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .about-cta-section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .how-we-work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .track-record-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .leadership-initials {
+        font-size: 3rem;
+    }
+}

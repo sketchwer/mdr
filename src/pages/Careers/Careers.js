@@ -3,72 +3,97 @@ import PageHeader from '../../components/PageHeader/PageHeader';
 import './Careers.css';
 
 const Careers = () => {
-    const jobOpenings = [
+    const partnershipOptions = [
         {
-            title: "Zoho CRM Consultant",
-            department: "Consulting",
-            location: "Mohali, Punjab",
-            type: "Full-time",
-            description: "We are looking for an experienced Zoho CRM Consultant to help our clients implement and optimize their CRM solutions."
+            title: "Client Partnership",
+            icon: "🤝",
+            description: "Partner with us to transform your business operations. We offer comprehensive Zoho solutions tailored to your specific needs, ensuring seamless integration and maximum ROI.",
+            benefits: [
+                "Customized Zoho implementations",
+                "Dedicated support team",
+                "Ongoing consultation and optimization",
+                "Training and knowledge transfer"
+            ]
         },
         {
-            title: "Zoho Creator Developer",
-            department: "Development",
-            location: "Mohali, Punjab",
-            type: "Full-time",
-            description: "Join our team as a Zoho Creator Developer and help build custom applications for our clients using low-code platforms."
+            title: "Technology Partnership",
+            icon: "🔧",
+            description: "Join hands with us as a technology partner. We collaborate with businesses to integrate Zoho solutions with your existing systems and create powerful automation workflows.",
+            benefits: [
+                "System integration services",
+                "API development and customization",
+                "Workflow automation",
+                "Technical consultation"
+            ]
         },
         {
-            title: "Business Analyst",
-            department: "Analytics",
-            location: "Mohali, Punjab",
-            type: "Full-time",
-            description: "We need a Business Analyst to analyze client requirements and design effective Zoho solutions."
+            title: "Strategic Alliance",
+            icon: "🎯",
+            description: "Form strategic alliances with us to expand your business reach. We work with agencies, consultants, and businesses to deliver exceptional Zoho solutions to end clients.",
+            benefits: [
+                "White-label solutions",
+                "Referral programs",
+                "Co-marketing opportunities",
+                "Revenue sharing models"
+            ]
         },
         {
-            title: "Sales Executive",
-            department: "Sales",
-            location: "Mohali, Punjab",
-            type: "Full-time",
-            description: "Looking for a motivated Sales Executive to help grow our client base and promote Zoho solutions."
+            title: "Consulting Services",
+            icon: "💼",
+            description: "Leverage our expertise for your Zoho projects. Our experienced consultants provide strategic guidance, implementation support, and best practices to ensure your success.",
+            benefits: [
+                "Expert consultation",
+                "Project management",
+                "Best practices implementation",
+                "Performance optimization"
+            ]
         }
     ];
 
     return (
         <div className="careers-page">
             <PageHeader 
-                title="Join Our Team"
-                subtitle="Careers"
-                description="Be part of a leading Zoho Partner in India and help businesses transform their operations"
+                title="Partner With Us"
+                subtitle="Partnerships & Collaboration"
+                description="Let's work together to transform businesses with innovative Zoho solutions and create lasting value"
             />
             <section className="careers-content">
                 <div className="container">
                     <div className="careers-intro">
                         <h2>Why Work With Us?</h2>
                         <p>
-                            At KG CRM Solutions, we believe in fostering a culture of innovation, collaboration, and growth. 
-                            As a leading Zoho Partner in India, we offer exciting opportunities to work with cutting-edge technology 
-                            and help businesses transform their operations.
+                            At Macro Encoder Software Pvt Ltd, we create an environment where ideas thrive, teamwork is encouraged, and professional development is a priority. As a trusted Zoho Partner in India, we provide opportunities to work with modern technologies and play a key role in helping organizations streamline and elevate their business processes.
                         </p>
                     </div>
                     <div className="job-openings">
-                        <h2 className="section-title">Current Openings</h2>
+                        <h2 className="section-title">Partnership Opportunities</h2>
                         <div className="jobs-grid">
-                            {jobOpenings.map((job, index) => (
+                            {partnershipOptions.map((option, index) => (
                                 <div key={index} className="job-card">
                                     <div className="job-header">
-                                        <h3 className="job-title">{job.title}</h3>
-                                        <span className="job-type">{job.type}</span>
+                                        <h3 className="job-title">
+                                            <span className="partnership-icon">{option.icon}</span>
+                                            {option.title}
+                                        </h3>
                                     </div>
-                                    <div className="job-meta">
-                                        <span className="job-department">{job.department}</span>
-                                        <span className="job-location">{job.location}</span>
+                                    <p className="job-description">{option.description}</p>
+                                    <div className="benefits-list">
+                                        <h4>Key Benefits:</h4>
+                                        <ul>
+                                            {option.benefits.map((benefit, idx) => (
+                                                <li key={idx}>{benefit}</li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <p className="job-description">{job.description}</p>
-                                    <button className="apply-button">Apply Now</button>
+                                    <button className="apply-button">Get Started</button>
                                 </div>
                             ))}
                         </div>
+                    </div>
+                    <div className="partnership-cta">
+                        <h2>Ready to Partner With Us?</h2>
+                        <p>Let's discuss how we can work together to achieve your business goals. Contact us today to explore partnership opportunities.</p>
+                        <a href="/contact" className="cta-button">Contact Us</a>
                     </div>
                 </div>
             </section>

@@ -6,8 +6,9 @@
 .page-hero {
     position: relative;
     padding: 120px 0 80px;
-    background: #771313;
+    background: #ffffff;
     overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .hero-background-animation {
@@ -17,10 +18,11 @@
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
     animation: pulse 8s ease-in-out infinite;
+    pointer-events: none;
 }
 
 @keyframes pulse {
@@ -37,34 +39,43 @@
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 24px;
-    line-height: 1.1;
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    font-weight: 900;
+    margin-bottom: 32px;
+    line-height: 1.05;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     animation: fadeInUp 0.8s ease-out;
+    letter-spacing: -0.03em;
 }
 
 .title-line {
     display: block;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
     animation: slideInLeft 0.8s ease-out;
+    line-height: 1.1;
 }
 
 .title-line.highlight {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
     animation: slideInRight 0.8s ease-out;
+    line-height: 1.1;
 }
 
 @keyframes fadeInUp {
@@ -101,10 +112,13 @@
 }
 
 .hero-description {
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
+    font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+    color: #475569;
+    line-height: 1.75;
     animation: fadeInUp 1s ease-out 0.2s both;
+    max-width: 700px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 /* Content Sections */
@@ -255,7 +269,7 @@
 .section-title {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
-    background: linear-gradient(135deg, #1a1a1a 0%, #771313 100%);
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -298,7 +312,7 @@
     background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%);
     border: 1px solid rgba(119, 19, 19, 0.1);
     border-radius: 24px;
-    padding: 48px 36px;
+    padding: 40px 32px;
     text-decoration: none;
     color: inherit;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -309,7 +323,7 @@
     animation: fadeInUp 0.6s ease-out forwards;
     display: flex;
     flex-direction: column;
-    min-height: 320px;
+    min-height: 260px;
     backdrop-filter: blur(10px);
 }
 
@@ -362,6 +376,7 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(119, 19, 19, 0.25);
+    flex-shrink: 0;
 }
 
 .service-icon-wrapper::after {
@@ -405,10 +420,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background: transparent !important;
     background-image: none !important;
+    margin: 0;
+    padding: 0;
 }
 
 .service-icon::before,
@@ -420,8 +437,8 @@
 }
 
 .service-icon svg {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     stroke: #ffffff !important;
     fill: none !important;
     fill-opacity: 0 !important;
@@ -429,6 +446,10 @@
     color: #ffffff !important;
     background: transparent !important;
     background-image: none !important;
+    display: block !important;
+    margin: 0 !important;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .service-icon svg * {
@@ -546,9 +567,10 @@
 
 .cta-section {
     padding: 100px 0;
-    background: #771313;
+    background: #ffffff;
     position: relative;
     overflow: hidden;
+    border-top: 1px solid #e2e8f0;
 }
 
 .cta-section::before {
@@ -575,12 +597,16 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .cta-content h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 16px;
     animation: fadeInUp 0.8s ease-out;
 }
@@ -588,28 +614,28 @@
 .cta-content p {
     font-size: 1.25rem;
     margin-bottom: 32px;
-    opacity: 0.9;
+    color: #64748b;
     animation: fadeInUp 1s ease-out;
 }
 
 .cta-button {
     display: inline-block;
-    background: #ffffff;
-    color: #771313;
+    background: linear-gradient(135deg, #1a1a1a 0%, #334155 100%);
+    color: #ffffff;
     padding: 16px 48px;
     border-radius: 12px;
     font-size: 1.125rem;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     animation: fadeInUp 1.2s ease-out;
 }
 
 .cta-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    background: #f8fafc;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #9a1a1a 0%, #771313 100%);
 }
 
 @media (max-width: 968px) {
