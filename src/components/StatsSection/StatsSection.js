@@ -32,7 +32,7 @@ const StatsSection = () => {
     }, [hasAnimated]);
 
     const animateCounters = () => {
-        const targets = { clients: 6200, developers: 250, years: 19, projects: 9500 };
+        const targets = { clients: 500, developers: 50, years: 10, projects: 800 };
         const duration = 2000;
         const steps = 60;
         const increment = duration / steps;
@@ -80,7 +80,7 @@ const StatsSection = () => {
             ), 
             number: counters.developers, 
             suffix: '+', 
-            label: 'Expert Developers', 
+            label: 'Developers Working', 
             color: '#4a4a4a',
             gradient: 'linear-gradient(135deg, #2d2d2d 0%, #5a5a5a 100%)'
         },
@@ -92,7 +92,7 @@ const StatsSection = () => {
             ), 
             number: counters.years, 
             suffix: '+', 
-            label: 'Years Experience', 
+            label: 'Years of Experience', 
             color: '#3a3a3a',
             gradient: 'linear-gradient(135deg, #3a3a3a 0%, #6a6a6a 100%)'
         },

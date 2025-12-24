@@ -14,19 +14,19 @@ const Home = () => {
                 <div className="container">
                     <div className="stats-grid">
                         <div className="stat-card">
-                            <div className="stat-number">6200+</div>
+                            <div className="stat-number">500+</div>
                             <div className="stat-label">Global Clients</div>
                         </div>
                         <div className="stat-card">
-                            <div className="stat-number">250+</div>
+                            <div className="stat-number">50+</div>
                             <div className="stat-label">Developers Working</div>
                         </div>
                         <div className="stat-card">
-                            <div className="stat-number">19+</div>
+                            <div className="stat-number">10+</div>
                             <div className="stat-label">Years of Experience</div>
                         </div>
                         <div className="stat-card">
-                            <div className="stat-number">9500+</div>
+                            <div className="stat-number">800+</div>
                             <div className="stat-label">Projects Delivered</div>
                         </div>
                     </div>

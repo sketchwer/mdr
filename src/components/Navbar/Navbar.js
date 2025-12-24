@@ -32,6 +32,17 @@ const Navbar = () => {
         setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
     };
 
+    const handleMouseEnter = (dropdownName) => {
+        setActiveDropdown(dropdownName);
+    };
+
+    const handleMouseLeave = () => {
+        // Small delay to allow moving to dropdown
+        setTimeout(() => {
+            setActiveDropdown(null);
+        }, 200);
+    };
+
     return (
         <>
             {/* Main Navbar */}
@@ -49,7 +60,11 @@ const Navbar = () => {
                                     <div className="nav-link-underline"></div>
                                 </Link>
                             </li>
-                            <li className={`nav-item-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
+                            <li 
+                                className={`nav-item-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
+                                onMouseEnter={() => handleMouseEnter('services')}
+                                onMouseLeave={handleMouseLeave}
+                            >
                                 <div 
                                     className={`nav-link-dropdown ${isActive('/services') ? 'active' : ''}`}
                                     onClick={() => toggleDropdown('services')}
@@ -60,7 +75,11 @@ const Navbar = () => {
                                     </svg>
                                     <div className="nav-link-underline"></div>
                                 </div>
-                                <div className={`services-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
+                                <div 
+                                    className={`services-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
+                                    onMouseEnter={() => handleMouseEnter('services')}
+                                    onMouseLeave={handleMouseLeave}
+                                >
                                     <div className="dropdown-simple-menu">
                                         <Link to="/services/zoho-solutions" className="dropdown-menu-item">
                                             <span className="menu-item-text">Zoho Solutions</span>
@@ -83,7 +102,11 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li className={`nav-item-dropdown ${activeDropdown === 'industries' ? 'active' : ''}`}>
+                            <li 
+                                className={`nav-item-dropdown ${activeDropdown === 'industries' ? 'active' : ''}`}
+                                onMouseEnter={() => handleMouseEnter('industries')}
+                                onMouseLeave={handleMouseLeave}
+                            >
                                 <div 
                                     className={`nav-link-dropdown ${isActive('/industries') ? 'active' : ''}`}
                                     onClick={() => toggleDropdown('industries')}
@@ -94,7 +117,11 @@ const Navbar = () => {
                                     </svg>
                                     <div className="nav-link-underline"></div>
                                 </div>
-                                <div className={`industries-dropdown ${activeDropdown === 'industries' ? 'active' : ''}`}>
+                                <div 
+                                    className={`industries-dropdown ${activeDropdown === 'industries' ? 'active' : ''}`}
+                                    onMouseEnter={() => handleMouseEnter('industries')}
+                                    onMouseLeave={handleMouseLeave}
+                                >
                                     <div className="dropdown-content">
                                         <div className="dropdown-section">
                                             <ul className="industries-list">
