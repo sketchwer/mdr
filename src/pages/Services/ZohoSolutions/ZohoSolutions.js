@@ -108,7 +108,7 @@ const ZohoSolutions = () => {
                     <path d="M10 6.5h4M10 17.5h4M6.5 10v4M17.5 10v4"/>
                 </svg>
             ),
-            link: "/services/zoho-integrations"
+            link: "/services/zoho-widgets"
         },
         {
             title: "Extensions Development",

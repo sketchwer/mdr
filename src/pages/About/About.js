@@ -9,7 +9,7 @@ const About = () => {
         { number: "200+", label: "Global Clients" },
         { number: "15+", label: "Countries" },
         { number: "12+", label: "Industries" },
-        { number: "50+", label: "Certified Zoho Experts" }
+        
     ];
 
     return (
@@ -171,10 +171,52 @@ const About = () => {
                 </div>
             </section>
 
+            {/* Leadership Section */}
+<section className="leadership-section">
+    <div className="container">
+        <span className="section-label center">Leadership</span>
+        <h2 className="section-heading center">The Team That Leads Us</h2>
+
+        <p className="leadership-intro">
+            We believe leadership is not about titles — it’s about responsibility, clarity, and results.
+        </p>
+
+        <div className="leadership-grid">
+            {/* Leader 1 */}
+            <div className="leader-card">
+                <div className="leader-avatar">MD</div>
+                <h3 className="leader-name">Meenakshi Devi</h3>
+                <span className="leader-role">Technology & Systems Leadership</span>
+                <p className="leader-description">
+                    Focused on building systems that work in real-world conditions, Meenakshi brings
+                    deep technical expertise and a hands-on approach to solving complex operational challenges.
+                </p>
+            </div>
+
+            {/* Leader 2 */}
+            <div className="leader-card">
+                <div className="leader-avatar">GV</div>
+                <h3 className="leader-name">Gaurav Vashistha</h3>
+                <span className="leader-role">Strategy & Execution</span>
+                <p className="leader-description">
+                    With strong ownership and execution focus, Gaurav ensures every solution moves
+                    from strategy to delivery — practical, scalable, and built for long-term impact.
+                </p>
+            </div>
+        </div>
+
+        <p className="leadership-footer">
+            Every project is held to the highest standard — not just in technology,
+            but in the real business value it delivers.
+        </p>
+    </div>
+</section>
+
+
             {/* Our Track Record Section */}
             <section className="about-track-record">
                 <div className="container">
-                    <span className="section-label">Our track record</span>
+                    <span className="section-label">Our track record </span>
                     <h2 className="section-heading">Proven where it counts</h2>
                     <div className="track-record-grid">
                         {trackRecord.map((stat, index) => (

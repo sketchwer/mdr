@@ -15,10 +15,10 @@ const ServicesWeProvide = () => {
             title: <>Smart AI Automations, Integrations<br />& Document Intelligence</>,
             link: "/services/smart-automations",
             subServices: [
-                "Connect all your apps like Zoho one, CRM, accounting tools, JotForm, Make.com etc. to make daily work fully automatic",
+                "Connect Zoho one, CRM, and other apps like make.com,jot form etc to Automated updates, approvals, reminders, and daily workflows",
                 "AI-powered workflows using automation tools and APIs",
                 "Scan and read any document with AI and smart OCR for instant data extraction",
-                "Automated updates, approvals, reminders, and system syncing without manual effort"
+                
             ]
         },
         {
@@ -103,7 +103,7 @@ const ServicesWeProvide = () => {
                 "Secure and scalable enterprise software built using advanced Java technologies",
                 "Custom business applications including ERP, HRMS, attendance, inventory, finance, production, and EDC systems",
                 "High-performance backend development with strong integrations and automation",
-                "Clean, easy-to-use applications designed around your real business processes"
+            
             ]
         }
     ];

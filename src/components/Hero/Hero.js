@@ -59,8 +59,8 @@ const Hero = () => {
 
   const cards = [
     {
-      title: "Cross-Industry Success",
-      text: "150+ diversified solutions",
+      title: "AI-First Approach",
+      text: "Smart solutions designed around AI and automation",
       color: "#0066ff",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,8 @@ const Hero = () => {
       ),
     },
     {
-      title: "Agile working models",
-      text: "Customer-focused and results-driven",
+      title: "Authorized Zoho Partner,Certifications",
+      text: "Certified Zoho professionals delivering trusted and compliant solutions",
       color: "#00ff88",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,8 +81,8 @@ const Hero = () => {
       ),
     },
     {
-      title: "Globally Certified",
-      text: "50+ Achievements in excellence",
+      title: "Business Consulting",
+      text: "Practical Consulting that helps businesses work smarter and  faster",
       color: "#ff0066",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +92,8 @@ const Hero = () => {
       ),
     },
     {
-      title: "Innovation Driven",
-      text: "Cutting-edge AI solutions & technology",
+      title: "Zoho One Solution",
+      text: "Implementation, integration, customization, and ongoing support",
       color: "#a259ff",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,17 +107,16 @@ const Hero = () => {
   ];
 
   return (
-    <section className="hero-section">
       <div className="hero-container">
         <div className="hero-wrapper">
 
           {/* LEFT CONTENT */}
           <div className="hero-left">
             <h1 className="hero-heading">
-              Your AI-First Technology Partner
+              Smart ideas deserve AI-powered infrastructure
             </h1>
             <p className="hero-subtitle">
-              Empower your business with AI intelligence that fuses technology and strategy—driving innovation, efficiency, and growth with a competitive edge.
+              We combine AI intelligence with technology and strategy to drive innovation, efficiency, and sustainable growth.
             </p>
             <button className="hero-cta-btn">
               Contact with our team
@@ -147,7 +146,7 @@ const Hero = () => {
 
         </div>
       </div>
-    </section>
+  
   );
 };
 

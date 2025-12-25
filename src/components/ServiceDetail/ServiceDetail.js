@@ -31,10 +31,10 @@ const ServiceDetail = ({
     return (
         <div className="service-detail">
             {/* Hero Section */}
-            <section className="service-hero">
+    
                 <div className="container">
                     <div className="service-hero-content">
-                        <span className="service-badge">{subtitle}</span>
+                        {/* <span className="service-badge">{subtitle}</span> */}
                         <h1 className="service-title">{title}</h1>
                         <p className="service-description">{description}</p>
                         <div className="service-hero-buttons">
@@ -50,11 +50,11 @@ const ServiceDetail = ({
                         </div>
                     </div>
                 </div>
-            </section>
+    
 
             {/* Overview Section */}
             {overview && (
-                <section className="service-overview">
+                
                     <div className="container">
                         <div className="service-overview-content">
                             <h2 className="section-title">Overview</h2>
@@ -63,7 +63,7 @@ const ServiceDetail = ({
                             </div>
                         </div>
                     </div>
-                </section>
+                
             )}
 
             {/* Stats Section */}

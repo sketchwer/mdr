@@ -64,6 +64,8 @@ import ZohoDesk from './pages/Services/ZohoDesk/ZohoDesk';
 import ZohoProjects from './pages/Services/ZohoProjects/ZohoProjects';
 import ZohoIntegrations from './pages/Services/ZohoIntegrations/ZohoIntegrations';
 import ZohoExtensions from './pages/Services/ZohoExtensions/ZohoExtensions';
+import ZohoWidgets from './pages/Services/Zoho-widgets/Zoho-widgets';
+
 // AI & Automation Services
 import AIChatbots from './pages/Services/AIChatbots/AIChatbots';
 import BusinessProcessAutomation from './pages/Services/BusinessProcessAutomation/BusinessProcessAutomation';
@@ -198,6 +200,8 @@ function App() {
           <Route path="/services/zoho-projects" element={<ZohoProjects />} />
           <Route path="/services/zoho-integrations" element={<ZohoIntegrations />} />
           <Route path="/services/zoho-extensions" element={<ZohoExtensions />} />
+          <Route path="/services/zoho-widgets" element={<ZohoWidgets />} />
+
           {/* AI & Automation Services */}
           <Route path="/services/ai-chatbots" element={<AIChatbots />} />
           <Route path="/services/business-process-automation" element={<BusinessProcessAutomation />} />

@@ -16,7 +16,7 @@
 
 /* Hero Section */
 .service-hero {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    background: white;
     color: white;
     padding: 140px 0 100px;
     position: relative;
@@ -63,8 +63,10 @@
     z-index: 1;
     text-align: center;
     max-width: 900px;
+    padding: 40px;
     margin: 0 auto;
     animation: slideUp 0.8s ease-out;
+    margin-bottom: 40px;
 }
 
 @keyframes slideUp {
@@ -81,13 +83,11 @@
 .service-badge {
     display: inline-block;
     background: rgba(255, 255, 255, 0.15);
-    padding: 10px 24px;
     border-radius: 50px;
     font-size: 0.8125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 24px;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -108,12 +108,22 @@
 .service-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    margin-bottom: 24px;
     line-height: 1.1;
-    color: white;
+ background: linear-gradient(
+    135deg,
+    #000000,
+    #000000 25%,
+    #000000 50%,
+    #ff6b35 75%,
+    #ff8c42
+  );
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     letter-spacing: -0.02em;
     animation: fadeInDown 0.8s ease-out 0.3s both;
+
 }
 
 .service-description {
@@ -121,7 +131,7 @@
     line-height: 1.8;
     margin-bottom: 48px;
     opacity: 0.92;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(23, 18, 18, 0.95);
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -193,10 +203,11 @@
 }
 
 .btn-outline {
-    background: transparent;
-    color: white;
+    background: white;
+    color: rgb(12, 12, 12);
     border: 2px solid rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline:hover {
@@ -549,7 +560,7 @@
 
 .tech-badge {
     padding: 14px 28px;
-    background: #000000;
+    background: #ae2020;
     color: white;
     border-radius: 50px;
     font-weight: 600;

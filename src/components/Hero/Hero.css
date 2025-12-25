@@ -9,14 +9,13 @@
     display: flex;
     align-items: center;
     background: #ffffff;
-  padding: 120px 0;
     overflow: hidden;
 }
 
 .hero-container {
   width: 100%;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 30px;
   padding: 0 80px;
   }
   
@@ -40,8 +39,8 @@
   }
   
 .hero-heading {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 28px;
   background: linear-gradient(135deg, #000000 0%, #000000 40%, #ff6b35 70%, #ff8c42 100%);

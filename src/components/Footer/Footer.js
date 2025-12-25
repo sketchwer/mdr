@@ -34,7 +34,7 @@ const Footer = () => {
                                 <a href="tel:+918950065899">+91 8950065899</a>
                             </li>
                             <li>
-                                <a href="mailto:support@macroencoder.com">support@macroencoder.com</a>
+                                <a href="mailto:support@macroencoder.com">info@macroencoder.com</a>
                             </li>
                             <li className="address">
                                 <strong>India</strong>
@@ -71,10 +71,10 @@ const Footer = () => {
                 </div>
                 
                 <div className="footer-bottom">
-                    <p>© Copyright 2006 – 2025 Macro Encoder Software Private Limited</p>
+                    <p>©Copyright 2025 - 2026  |  All rights reserved </p>
                     <p style={{marginTop: '10px'}}>
                         <a href="#terms" style={{color: 'rgba(255, 255, 255, 0.6)', textDecoration: 'none', marginRight: '20px'}}>Terms & Conditions</a>
-                        <a href="#privacy" style={{color: 'rgba(255, 255, 255, 0.6)', textDecoration: 'none'}}>Privacy Policy</a>
+                
                     </p>
                 </div>
             </div>

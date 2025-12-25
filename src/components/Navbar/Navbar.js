@@ -164,24 +164,24 @@ const Navbar = () => {
                                     <div className="nav-link-underline"></div>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/careers" className={isActive('/careers') ? 'active' : ''}>
-                                    <span className="nav-link-text">CAREER</span>
+                                     <span className="nav-link-text">CAREER</span>
                                     <div className="nav-link-underline"></div>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link to="/blog" className={isActive('/blog') ? 'active' : ''}>
                                     <span className="nav-link-text">BLOG</span>
                                     <div className="nav-link-underline"></div>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>
                                     <span className="nav-link-text">BOOK A CALL</span>
                                     <div className="nav-link-underline"></div>
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                         <div className="contact-button-wrapper">
                             <Link to="/contact" className="contact-us-button">
