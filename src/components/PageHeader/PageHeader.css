@@ -1,6 +1,6 @@
 .page-header {
     position: relative;
-    padding: 150px 0 100px;
+    padding: 20px 0 10px;
     overflow: hidden;
     background: var(--bg-gradient-hero);
 }
@@ -48,11 +48,10 @@
 
 .page-subtitle {
     display: inline-block;
-    
     background: var(--bg-gradient-light);
     backdrop-filter: blur(10px);
     border-radius: 50px;
-   
+
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;

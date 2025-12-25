@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Testimonials from '../Testimonials/Testimonials';
 import CTA from '../CTA/CTA';
 import './IndustryDetail.css';
