@@ -1,12 +1,13 @@
 .industry-detail {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 /* Hero Section */
 .industry-hero {
     background: var(--bg-gradient-hero);
-    padding: 120px 0 40px;
+  
     position: relative;
+
 }
 
 .industry-hero-content {

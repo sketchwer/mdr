@@ -14,7 +14,7 @@ const PageHeader = ({ title, subtitle, description }) => {
             </div>
             <div className="container">
                 <div className="page-header-content">
-                    <span className="page-subtitle">{subtitle}</span>
+                    
                     <h1 className="page-title">{title}</h1>
                     <p className="page-description">{description}</p>
                 </div>

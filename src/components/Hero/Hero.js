@@ -110,7 +110,7 @@ const Hero = () => {
     <section className="hero-section">
       <div className="hero-container">
         <div className="hero-wrapper">
-          
+
           {/* LEFT CONTENT */}
           <div className="hero-left">
             <h1 className="hero-heading">
@@ -131,7 +131,7 @@ const Hero = () => {
                 <div
                   key={`hero-card-${i}`}
                   className={`hero-card hero-card-${i + 1} ${activeIdx === i ? "hero-card-active" : ""}`}
-                  style={{ 
+                  style={{
                     '--card-color': card.color,
                     transform: `translate(${positions[i].x}px, ${positions[i].y}px)`,
                     width: `${cardSize.w}px`

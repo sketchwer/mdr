@@ -3,14 +3,14 @@
    ============================================ */
 
 .hero-section {
-  position: relative;
+    position: relative;
   width: 100%;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
   padding: 120px 0;
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .hero-container {
@@ -18,36 +18,36 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 80px;
-}
-
+  }
+  
 .hero-wrapper {
-  display: grid;
+    display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 80px;
-  align-items: center;
-  width: 100%;
-}
-
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+  }
+  
 /* ============================================
    LEFT SECTION - TEXT CONTENT
    ============================================ */
 
 .hero-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   z-index: 2;
-}
-
+  }
+  
 .hero-heading {
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 28px;
   background: linear-gradient(135deg, #000000 0%, #000000 40%, #ff6b35 70%, #ff8c42 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   letter-spacing: -0.02em;
 }
 
@@ -103,8 +103,8 @@
     0 4px 12px rgba(0, 0, 0, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   background: linear-gradient(135deg, #9a1a1a 0%, #771313 100%);
-}
-
+  }
+  
 .hero-cta-btn:active {
   transform: translateY(0);
 }
@@ -208,17 +208,17 @@
 
 .hero-card-title {
   color: #ffffff;
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-}
-
+  }
+  
 .hero-card-text {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.95rem;
   line-height: 1.5;
-}
-
+  }
+  
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
@@ -298,7 +298,7 @@
   .hero-container {
     padding: 0 20px;
   }
-  
+
   .hero-wrapper {
     gap: 40px;
   }
@@ -316,27 +316,27 @@
   .hero-cta-btn {
     padding: 16px 36px;
     font-size: 1rem;
-  }
-  
+    }
+
   .hero-cards-wrapper {
     width: 260px;
     height: 350px;
-  }
-  
+    }
+
   .hero-card {
     width: 180px;
     padding: 1.2rem 0.8rem 0.8rem 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 50px 0;
+    }
   }
   
+  @media (max-width: 480px) {
+    .hero-section {
+    padding: 50px 0;
+    }
+  
   .hero-heading {
-    font-size: 2rem;
-  }
+      font-size: 2rem;
+    }
   
   .hero-subtitle {
     font-size: 0.95rem;
@@ -367,4 +367,5 @@
   .hero-card-text {
     font-size: 0.65rem;
   }
-}
+  }
+  

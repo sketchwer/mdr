@@ -25,9 +25,7 @@ const IndustryDetail = ({
             <section className="industry-hero">
                 <div className="container">
                     <div className="industry-hero-content">
-                        <span className="breadcrumb">
-                            <Link to="/">Home</Link> / <Link to="/industries">Industries</Link> / {title}
-                        </span>
+                       
                         <h1 className="industry-hero-title">{title}</h1>
                         <p className="industry-hero-description">{description}</p>
                     </div>

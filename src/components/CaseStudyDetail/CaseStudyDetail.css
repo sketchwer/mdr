@@ -1,11 +1,11 @@
 .case-study-detail {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 /* Hero Section */
 .case-study-hero {
     background: var(--bg-gradient-hero);
-    padding: 120px 0 60px;
+    padding: 20px 0 60px;
     position: relative;
 }
 
@@ -37,7 +37,7 @@
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.2;
-    background: linear-gradient(135deg, #771313 0%, #a01a1a 50%, #771313 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 40%, #ff6b35 70%, #ff8c42 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

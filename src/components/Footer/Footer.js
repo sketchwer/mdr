@@ -31,7 +31,7 @@ const Footer = () => {
                         <h3 className="footer-title">CONNECT</h3>
                         <ul className="footer-contact">
                             <li>
-                                <a href="tel:+919999999999">+91 9999999999</a>
+                                <a href="tel:+918950065899">+91 8950065899</a>
                             </li>
                             <li>
                                 <a href="mailto:support@macroencoder.com">support@macroencoder.com</a>

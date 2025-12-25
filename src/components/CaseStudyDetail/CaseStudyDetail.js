@@ -24,9 +24,7 @@ const CaseStudyDetail = ({
             <section className="case-study-hero">
                 <div className="container">
                     <div className="case-study-hero-content">
-                        <span className="breadcrumb">
-                            <Link to="/">Home</Link> / <Link to="/case-studies">Case Studies</Link> / {clientName}
-                        </span>
+                    
                         <h1 className="case-study-hero-title">{title}</h1>
                         <p className="case-study-hero-subtitle">{subtitle}</p>
                     </div>

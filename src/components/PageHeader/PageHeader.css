@@ -48,11 +48,11 @@
 
 .page-subtitle {
     display: inline-block;
-    padding: 10px 24px;
+    
     background: var(--bg-gradient-light);
     backdrop-filter: blur(10px);
     border-radius: 50px;
-    margin-bottom: 1.5rem;
+   
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -65,13 +65,13 @@
 .page-title {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 900;
-    margin-bottom: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
     background: var(--bg-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    
 }
 
 .page-description {
