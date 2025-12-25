@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Testimonials from '../Testimonials/Testimonials';
-import CTA from '../CTA/CTA';
 import './IndustryDetail.css';
 
 const IndustryDetail = ({
