@@ -257,7 +257,7 @@ const IndustryDetail = ({
                 </section>
             )}
 
-            <CTA />
+           
         </div>
     );
 };

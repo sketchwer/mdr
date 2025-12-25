@@ -495,7 +495,7 @@
 .process-number-industry {
     width: 60px;
     height: 60px;
-    background: var(--bg-gradient);
+    background: rgb(155, 39, 39);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -564,7 +564,7 @@
 
 .tech-badge-industry {
     padding: 12px 24px;
-    background: var(--bg-gradient);
+    background: rgb(158, 42, 42);
     color: white;
     border-radius: 30px;
     font-weight: 600;
