@@ -1,13 +1,9 @@
-# TechPartner Website - React.js
-
-एक modern, responsive React.js website जो Elsner.com और Dotsquares.com के design elements को combine करती है।
-
 ## Features
 
-- **Home Page**: Hero section with company statistics और call-to-action
+- **Home Page**: Hero section with company statistics or call-to-action
 - **Services Section**: 8+ expertise areas showcase (WordPress, Magento, Shopify, Laravel, etc.)
 - **Projects Section**: Filterable project portfolio with categories
-- **Case Studies**: Detailed case studies with metrics और success stories
+- **Case Studies**: Detailed case studies with metrics or success stories
 - **Industries Section**: 12+ industries served with icons
 - **Contact Form**: Professional contact form with React state management
 
@@ -21,24 +17,24 @@
 ## Installation & Setup
 
 ### Prerequisites
-- Node.js (v14 या उससे ऊपर)
-- npm या yarn
+- Node.js 
+- npm or yarn
 
 ### Steps
 
-1. **Dependencies install करें:**
+1. **Dependencies install :**
 ```bash
 npm install
 ```
 
-2. **Development server start करें:**
+2. **Development server start :**
 ```bash
 npm start
 ```
 
-3. Browser में खुल जाएगा: `http://localhost:3000`
+3. : `http://localhost:3000`
 
-4. **Production build बनाने के लिए:**
+4. **Production build:**
 ```bash
 npm run build
 ```
@@ -106,48 +102,24 @@ src/
 
 ## Features Breakdown
 
-- ✅ **Responsive Design** - Mobile, tablet, desktop सभी devices पर perfect
+- ✅ **Responsive Design** - Mobile, tablet, desktop devices 
 - ✅ **React Hooks** - Modern React patterns
-- ✅ **Smooth Animations** - CSS transitions और hover effects
+- ✅ **Smooth Animations** - CSS transitions or hover effects
 - ✅ **Filterable Projects** - Category-based filtering
 - ✅ **Form Handling** - React state management
-- ✅ **Modern UI** - Gradients, shadows, और modern design
+- ✅ **Modern UI** - Gradients, shadows, or modern design
 
-## Customization
 
-### Colors Change करने के लिए:
-`src/index.css` में CSS variables edit करें:
-```css
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #10b981;
-    /* ... */
-}
-```
-
-### Content Change करने के लिए:
-Respective component files में data arrays edit करें।
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
 - Edge (latest)
 
-## Notes
-
-- Form submission currently console में log करता है - backend API integrate करें
-- Images placeholder gradients हैं - actual images add करें
-- Company logos placeholder हैं - actual logos add करें
 
 ## Available Scripts
 
-- `npm start` - Development server start करता है
-- `npm run build` - Production build बनाता है
-- `npm test` - Tests run करता है
+- `npm start` - 
+- `npm run build` - 
+- `npm test` - 
 
-## License
+
 
 Free to use और modify करने के लिए।
 
