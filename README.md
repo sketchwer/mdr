@@ -1,51 +1,64 @@
-# TechPartner Website - React.js
+A modern, fully responsive React.js website that combines design inspiration and UI patterns from Elsner.com and Dotsquares.com to deliver a clean, professional digital presence.
 
-एक modern, responsive React.js website जो Elsner.com और Dotsquares.com के design elements को combine करती है।
+Key Features
 
-## Features
+Home Page
+Engaging hero section with company statistics and clear call-to-action buttons.
 
-- **Home Page**: Hero section with company statistics और call-to-action
-- **Services Section**: 8+ expertise areas showcase (WordPress, Magento, Shopify, Laravel, etc.)
-- **Projects Section**: Filterable project portfolio with categories
-- **Case Studies**: Detailed case studies with metrics और success stories
-- **Industries Section**: 12+ industries served with icons
-- **Contact Form**: Professional contact form with React state management
+Services Section
+Showcase of 8+ areas of expertise including WordPress, Magento, Shopify, Laravel, and more.
 
-## Technologies Used
+Projects Section
+Filterable project portfolio with category-based navigation.
 
-- **React 18.2.0** - Latest React version
-- **React Hooks** - useState, useEffect for state management
-- **CSS3** - Modern styling with CSS modules
-- **Google Fonts** - Inter font family
+Case Studies
+Detailed case studies highlighting success stories, metrics, and outcomes.
 
-## Installation & Setup
+Industries Section
+Coverage of 12+ industries with icon-based visual representation.
 
-### Prerequisites
-- Node.js (v14 या उससे ऊपर)
-- npm या yarn
+Contact Form
+Professional contact form built using React controlled components and state management.
 
-### Steps
+Technologies Used
 
-1. **Dependencies install करें:**
-```bash
+React 18.2.0 – Latest stable version of React
+
+React Hooks – useState, useEffect for state and lifecycle management
+
+CSS3 – Modern styling with responsive layouts
+
+Google Fonts – Inter font family for clean typography
+
+Installation & Setup
+Prerequisites
+
+Node.js (v14 or higher)
+
+npm or yarn
+
+Setup Steps
+
+Install dependencies
+
 npm install
-```
 
-2. **Development server start करें:**
-```bash
+
+Start the development server
+
 npm start
-```
 
-3. Browser में खुल जाएगा: `http://localhost:3000`
 
-4. **Production build बनाने के लिए:**
-```bash
+Open your browser at:
+
+http://localhost:3000
+
+
+Create a production build
+
 npm run build
-```
 
-## Project Structure
-
-```
+Project Structure
 src/
 ├── components/
 │   ├── Navbar/
@@ -65,93 +78,114 @@ src/
 ├── App.css
 ├── index.js
 └── index.css
-```
 
-## Components Overview
+Components Overview
+Navbar
 
-### Navbar
-- Sticky navigation
-- Mobile-responsive hamburger menu
-- Smooth scroll to sections
+Sticky navigation bar
 
-### Hero
-- Gradient background
-- Company statistics
-- Call-to-action buttons
+Mobile-responsive hamburger menu
 
-### Services
-- Grid layout
-- Hover effects
-- Service statistics
+Smooth scrolling between sections
 
-### Projects
-- Filterable gallery (All, Magento, WordPress, React, Mobile)
-- Category-based filtering
-- Project cards with animations
+Hero Section
 
-### Case Studies
-- Case study cards
-- Success metrics
-- Industry tags
+Gradient background
 
-### Industries
-- Grid of industry cards
-- Icon-based representation
-- Hover animations
+Key company statistics
 
-### Contact Form
-- React controlled components
-- Form validation
-- Service dropdown
+Primary call-to-action buttons
 
-## Features Breakdown
+Services
 
-- ✅ **Responsive Design** - Mobile, tablet, desktop सभी devices पर perfect
-- ✅ **React Hooks** - Modern React patterns
-- ✅ **Smooth Animations** - CSS transitions और hover effects
-- ✅ **Filterable Projects** - Category-based filtering
-- ✅ **Form Handling** - React state management
-- ✅ **Modern UI** - Gradients, shadows, और modern design
+Grid-based layout
 
-## Customization
+Hover interactions
 
-### Colors Change करने के लिए:
-`src/index.css` में CSS variables edit करें:
-```css
+Service highlights and metrics
+
+Projects
+
+Filterable gallery (All, Magento, WordPress, React, Mobile)
+
+Animated project cards
+
+Category-based filtering
+
+Case Studies
+
+Detailed case study cards
+
+Performance metrics
+
+Industry tags
+
+Industries
+
+Icon-based industry grid
+
+Clean hover animations
+
+Scalable layout
+
+Contact Form
+
+React controlled inputs
+
+Basic form validation
+
+Service selection dropdown
+
+Feature Highlights
+
+✅ Fully Responsive Design – Optimized for mobile, tablet, and desktop
+
+✅ Modern React Architecture – Uses hooks and functional components
+
+✅ Smooth Animations – CSS transitions and hover effects
+
+✅ Dynamic Filtering – Category-based project filtering
+
+✅ Form State Management – Built with React state handling
+
+✅ Professional UI – Modern gradients, shadows, and spacing
+
+Customization Guide
+Update Theme Colors
+
+Edit CSS variables in src/index.css:
+
 :root {
     --primary-color: #2563eb;
     --secondary-color: #10b981;
-    /* ... */
 }
-```
 
-### Content Change करने के लिए:
-Respective component files में data arrays edit करें।
+Update Content
 
-## Browser Support
+Modify the data arrays inside the respective component files.
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+Browser Compatibility
 
-## Notes
+Chrome (latest)
 
-- Form submission currently console में log करता है - backend API integrate करें
-- Images placeholder gradients हैं - actual images add करें
-- Company logos placeholder हैं - actual logos add करें
+Firefox (latest)
 
-## Available Scripts
+Safari (latest)
 
-- `npm start` - Development server start करता है
-- `npm run build` - Production build बनाता है
-- `npm test` - Tests run करता है
+Microsoft Edge (latest)
 
-## License
+Notes
 
-Free to use और modify करने के लिए।
+Form submission currently logs data to the console; backend API integration is required for production.
 
----
+Images are placeholders and should be replaced with actual assets.
 
-**Made with ❤️ using React.js**
+Company logos are placeholders and should be updated with real logos.
 
+Available Scripts
+
+npm start – Run development server
+
+npm run build – Generate production build
+
+npm test – Run tests
