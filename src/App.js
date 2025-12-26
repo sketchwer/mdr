@@ -12,6 +12,8 @@ import Contact from './pages/Contact/Contact';
 import Blog from './pages/Blog/Blog';
 import Careers from './pages/Careers/Careers';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import RequestQuote from './pages/RequestQuote/RequestQuote';
+
 // Magento Services
 import MagentoDevelopment from './pages/Services/MagentoDevelopment/MagentoDevelopment';
 import Magento2Migration from './pages/Services/Magento2Migration/Magento2Migration';
@@ -64,7 +66,7 @@ import ZohoDesk from './pages/Services/ZohoDesk/ZohoDesk';
 import ZohoProjects from './pages/Services/ZohoProjects/ZohoProjects';
 import ZohoIntegrations from './pages/Services/ZohoIntegrations/ZohoIntegrations';
 import ZohoExtensions from './pages/Services/ZohoExtensions/ZohoExtensions';
-import ZohoWidgets from './pages/Services/Zoho-widgets/Zoho-widgets';
+import ZohoWidgets from './pages/Services/ZohoWidgets/ZohoWidgets';
 
 // AI & Automation Services
 import AIChatbots from './pages/Services/AIChatbots/AIChatbots';
@@ -152,6 +154,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/request-quote" element={<RequestQuote />} />
+
           {/* Main Service Category Pages */}
           <Route path="/services/zoho-solutions" element={<ZohoSolutions />} />
           <Route path="/services/software-development" element={<SoftwareDevelopment />} />

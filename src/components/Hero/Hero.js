@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -118,9 +119,14 @@ const Hero = () => {
             <p className="hero-subtitle">
               We combine AI intelligence with technology and strategy to drive innovation, efficiency, and sustainable growth.
             </p>
-            <button className="hero-cta-btn">
-              Contact with our team
-            </button>
+
+
+<Link to="/request-quote">
+  <button className="hero-cta-btn">
+    Contact with our team
+  </button>
+</Link>
+
           </div>
 
           {/* RIGHT CARDS */}

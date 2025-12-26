@@ -64,7 +64,6 @@ const SoftwareDevelopment = () => {
                 <div className="hero-background-animation"></div>
                 <div className="container">
                     <div className="hero-content">
-                        <div className="hero-badge">Our Expertise</div>
                         <h1 className="hero-title">
                             Software Development
                         </h1>

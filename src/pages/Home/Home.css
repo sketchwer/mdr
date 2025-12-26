@@ -422,6 +422,7 @@
     }
 }
 
+
 @media (max-width: 768px) {
     .stats-section,
     .expert-it-section,
@@ -474,5 +475,12 @@
     
     .intro-text .section-description {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page .stats-section .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
     }
 }

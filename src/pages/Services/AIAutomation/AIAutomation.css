@@ -40,6 +40,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    text-align: center;
 }
 
 .hero-badge {
@@ -72,7 +73,7 @@
 }
 
 .hero-title {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(1.5rem, 3.3vw, 3.5rem);
     font-weight: 900;
     background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
     -webkit-background-clip: text;
@@ -83,6 +84,7 @@
     text-align: left;
     animation: fadeInUp 0.8s ease-out 0.1s both;
     letter-spacing: -0.03em;
+    text-align: center;
 }
 
 .title-line.highlight {
@@ -92,6 +94,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-align: center;
+    font-size: clamp(2.5rem, 4.3vw, 4.5rem);
 }
 
 @keyframes fadeInUp {
@@ -136,10 +140,12 @@
     max-width: 700px;
     font-weight: 400;
     letter-spacing: 0.01em;
-    max-width: 750px;
     font-weight: 400;
     letter-spacing: 0.01em;
     margin-bottom: 48px;
+     margin: 0 auto;
+    max-width: 920px;
+    text-align: center;
 }
 
 .hero-stats {

@@ -59,15 +59,25 @@
 }
 
 .testimonial-card {
-    flex: 1;
     max-width: 900px;
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 50px 50px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid #f1f5f9;
-    transition: all 0.3s ease;
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    border-radius: 24px;
+    padding: 48px 56px;
+    border: 1px solid rgba(119, 19, 19, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    position: relative;
 }
+
+.testimonial-card::before {
+    content: "“";
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 120px;
+    color: rgba(119, 19, 19, 0.08);
+    font-family: serif;
+}
+
 
 .testimonial-card:hover {
     box-shadow: 0 12px 40px rgba(119, 19, 19, 0.15);
@@ -78,20 +88,20 @@
     text-align: center;
 }
 
-.testimonial-rating {
+.testimonial-rating.bottom {
     display: flex;
     justify-content: center;
     gap: 6px;
-    margin-bottom: 24px;
+    margin-top: 10px;
 }
 
 .star {
-    color: #ffc72c;
-    font-size: 1.75rem;
-    line-height: 1;
-    text-shadow: 0 2px 4px rgba(255, 199, 44, 0.3);
-    animation: starGlow 2s ease-in-out infinite;
+    font-size: 1.6rem;
+    color: #f5b301;
+    text-shadow: none;
+    animation: none;
 }
+
 
 .star:nth-child(1) { animation-delay: 0s; }
 .star:nth-child(2) { animation-delay: 0.2s; }
@@ -109,43 +119,41 @@
 }
 
 .project-title {
-    font-size: 1.125rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #771313;
-    margin: 0;
-    font-style: normal;
-    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0.9;
 }
+
 
 .testimonial-text {
-    font-size: 1.125rem;
-    color: #334155;
+    font-size: 1.2rem;
     line-height: 1.9;
-    margin-bottom: 32px;
+    color: #334155;
     font-style: italic;
-    font-weight: 400;
+    margin-bottom: 28px;
+    text-align: center;
 }
 
-.testimonial-author {
-    margin-top: 32px;
-    padding-top: 32px;
-    border-top: 1px solid #e2e8f0;
+
+.testimonial-author.top {
+    text-align: center;
+    margin-bottom: 28px;
 }
 
 .author-name {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: #1a1a1a;
-    margin-bottom: 8px;
-    letter-spacing: -0.01em;
 }
 
 .author-company {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #64748b;
-    margin: 0;
-    font-weight: 500;
 }
+
 
 .carousel-dots {
     display: flex;

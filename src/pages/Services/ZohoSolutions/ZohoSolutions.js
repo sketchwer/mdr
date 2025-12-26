@@ -108,7 +108,7 @@ const ZohoSolutions = () => {
                     <path d="M10 6.5h4M10 17.5h4M6.5 10v4M17.5 10v4"/>
                 </svg>
             ),
-            link: "/services/zoho-widgets"
+            link: "/services/Zoho-widgets"
         },
         {
             title: "Extensions Development",
@@ -133,15 +133,16 @@ const ZohoSolutions = () => {
                 <div className="container">
                     <div className="hero-content">
                         <h1 className="hero-title">
-                            <span className="title-line">Zoho</span>
-                            <span className="title-line highlight">Solutions</span>
+                            <span className="title-line">Zoho Solutions</span>
                         </h1>
                         <p className="hero-description">
-                            Comprehensive Zoho implementation, customization, and integration services to transform your business operations.
+                            We implement and customize Zoho applications with custom widgets, extensions, and deep integrations to solve use cases that standard Zoho features can’t handle. Whether it’s complex data handling, third-party connections, or unique workflows, we make Zoho smarter and more capable.
                         </p>
+
                     </div>
                 </div>
             </div>
+
 
             {/* Content Sections */}
             <div className="content-sections">

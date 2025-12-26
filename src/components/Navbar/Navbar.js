@@ -164,12 +164,7 @@ const Navbar = () => {
                                     <div className="nav-link-underline"></div>
                                 </Link>
                             </li>
-                            {/* <li>
-                                <Link to="/careers" className={isActive('/careers') ? 'active' : ''}>
-                                     <span className="nav-link-text">CAREER</span>
-                                    <div className="nav-link-underline"></div>
-                                </Link>
-                            </li> */}
+                          
                             <li>
                                 <Link to="/blog" className={isActive('/blog') ? 'active' : ''}>
                                     <span className="nav-link-text">BLOG</span>
@@ -183,7 +178,14 @@ const Navbar = () => {
                                 </Link>
                             </li> */}
                         </ul>
+<img
+    src="/zoho.png"
+    alt="Contact"
+    className="image"
+  />
                         <div className="contact-button-wrapper">
+
+
                             <Link to="/contact" className="contact-us-button">
                                 CONTACT US
                             </Link>

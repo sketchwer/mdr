@@ -12,7 +12,16 @@ const Footer = () => {
                         <ul className="footer-links">
                             <li><Link to="/services">Zoho Solutions</Link></li>
                             <li><Link to="/services">AI & Automation</Link></li>
-                            <li><Link to="/services">Custom Software Development</Link></li>
+                            <li className="footer-software-item">
+    <Link to="/services">Custom Software Development</Link>
+
+    <img
+        src="/cropped_circle_image.png"
+        alt="Certified Developer"
+        className="footer-software-badge"
+    />
+</li>
+
                         </ul>
                     </div>
                     
