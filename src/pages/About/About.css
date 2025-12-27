@@ -183,17 +183,27 @@
 .goal-card-icon {
     width: 56px;
     height: 56px;
-    background: #c91f1f;
+    background: #000000;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .goal-card-icon svg {
     stroke: #ffffff;
+}
+
+.goal-card:hover .goal-card-icon {
+    transform: translateY(-4px);
+    background: #000000;
+}
+
+.goal-card:hover .goal-card-icon svg {
+    transform: scale(1.05);
 }
 
 .goal-card-text {
@@ -344,10 +354,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #c02522;
+    background: #000000;
     border-radius: 12px;
     color: #ffffff;
     position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-card-icon::before {
@@ -355,7 +366,7 @@
     position: absolute;
     inset: -1px;
     border-radius: 12px;
-    border: 1px solid rgba(196, 32, 32, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     pointer-events: none;
 }
 
@@ -364,6 +375,15 @@
     width: 32px;
     height: 32px;
     stroke-width: 2;
+}
+
+.how-we-work-card:hover .work-card-icon {
+    transform: translateY(-4px);
+    background: #000000;
+}
+
+.how-we-work-card:hover .work-card-icon svg {
+    transform: scale(1.05);
 }
 
 .work-card-title {
@@ -442,7 +462,7 @@
     height: 96px;
     margin: 0 auto 24px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #000000, #ba1c1c);
+    background: linear-gradient(135deg, #1a1a1a 0%, #334155 100%);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -574,16 +594,26 @@
     max-width: 1200px;
 }
 
-.about-track-record .section-heading {
+.about-track-record .section-label {
     text-align: center;
-    margin-bottom: 80px;
+    display: block;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 60px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .track-record-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 40px;
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .track-record-item {
@@ -675,7 +705,7 @@
     .about-leadership,
     .about-track-record,
     .about-drives-us {
-        padding: 80px 0;
+        padding: 60px 0;
     }
 
     .about-goal-layout {
@@ -685,20 +715,40 @@
 
     .goal-left-panel {
         min-height: auto;
-        padding: 40px 30px;
+        padding: 40px 24px;
+        text-align: center;
+    }
+    
+    .goal-left-panel .section-label {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+        letter-spacing: 0.05em;
+    }
+    
+    .goal-main-heading {
+        font-size: 2rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
     }
 
     .goal-cards {
         grid-template-columns: 1fr;
     }
+    
+    .about-how-we-work .section-label {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 1.75rem;
+    }
 
     .how-we-work-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 14px;
+        margin-top: 0;
     }
 
     .how-we-work-card {
-        padding: 32px 24px;
+        padding: 32px 20px;
     }
 
     .work-card-icon {
@@ -724,6 +774,11 @@
     .about-how-we-work .section-label {
         font-size: 2rem;
         margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .how-we-work-grid {
+        margin-top: 0;
     }
 
     .leadership-grid {
@@ -749,6 +804,59 @@
 }
 
 @media (max-width: 480px) {
+    .about-goal-section {
+        padding: 60px 0;
+    }
+    
+    .about-how-we-work {
+        padding: 50px 0;
+    }
+    
+    .goal-left-panel {
+        padding: 32px 20px;
+    }
+    
+    .goal-left-panel .section-label {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+    }
+    
+    .goal-main-heading {
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+    
+    .about-how-we-work .section-label {
+        font-size: 1.5rem;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    
+    .how-we-work-grid {
+        gap: 20px;
+    }
+    
+    .how-we-work-card {
+        padding: 28px 20px;
+    }
+    
+    .work-card-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+    }
+    
+    .work-card-title {
+        font-size: 1.125rem;
+        margin-bottom: 12px;
+    }
+    
+    .work-card-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
     .track-record-grid {
         grid-template-columns: 1fr;
     }

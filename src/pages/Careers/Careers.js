@@ -54,7 +54,7 @@ const Careers = () => {
         <div className="careers-page">
             <PageHeader 
                 title="Partner With Us"
-                subtitle="Partnerships & Collaboration"
+                
                 description="Let's work together to transform businesses with innovative Zoho solutions and create lasting value"
             />
             <section className="careers-content">

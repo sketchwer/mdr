@@ -165,10 +165,15 @@
 }
 
 .btn-submit {
-    width: 100%;
-    padding: 18px 32px;
+    width: auto;
+    min-width: 200px;
+    padding: 18px 48px;
     font-size: 1.1rem;
     margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
     background: linear-gradient(135deg, #771313 0%, #a01a1a 100%);
     color: white;
     border: none;
@@ -193,6 +198,7 @@
     background: rgba(255, 255, 255, 0.2);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
+    text-align: center;
 }
 
 .btn-submit:hover::before {

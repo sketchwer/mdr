@@ -7,6 +7,23 @@ const ServicesWeProvide = () => {
         {
             icon: (
                 <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+            ),
+            title: "Smart Zoho Solutions",
+            link: "/services/zoho-zia-intelligence",
+            subServices: [
+                "Zoho One implementation with complete business integration",
+                "Zoho CRM and CRM Plus for sales growth",
+                "Automation workflows, custom and Zoho Marketplace extensions",
+                "Analytics, reporting, and Zia-powered business insights"
+            ]
+        },
+        {
+            icon: (
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
@@ -70,23 +87,6 @@ const ServicesWeProvide = () => {
                 "Python + ML models for document reading and data extraction",
                 "Predict outcomes, identify patterns automatically",
                 "Accurate and fast daily decision-making"
-            ]
-        },
-        {
-            icon: (
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                    <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-            ),
-            title: "Zoho Zia Intelligence",
-            link: "/services/zoho-zia-intelligence",
-            subServices: [
-                "Predictive insights and anomaly alerts",
-                "Email intelligence and chat assistance",
-                "AI-triggered workflows for smart automation",
-                "Enhance your Zoho apps with Zia's capabilities"
             ]
         },
         {

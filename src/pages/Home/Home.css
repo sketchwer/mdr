@@ -412,6 +412,7 @@
     .stats-grid,
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
     
     .intro-content,
@@ -419,6 +420,18 @@
     .expert-it-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    
+    .expert-it-title,
+    .intro-text .section-title,
+    .zoho-solutions-text .section-title {
+        text-align: center;
+    }
+    
+    .expert-it-description,
+    .intro-text .section-description,
+    .zoho-solutions-text .section-description {
+        text-align: center;
     }
 }
 
@@ -429,13 +442,17 @@
     .intro-section,
     .zoho-solutions-section,
     .why-choose-section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     
     .stats-grid,
     .features-grid {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+    
+    .home-page .stats-section .stat-card {
+        padding: 30px 20px;
     }
     
     .home-page .stats-section .stat-card .stat-number {
@@ -452,11 +469,16 @@
     }
     
     .expert-it-section {
-        padding: 60px 0;
+        padding: 50px 0;
+    }
+    
+    .expert-it-content {
+        gap: 30px;
     }
     
     .expert-it-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        text-align: center;
     }
     
     .expert-it-subtitle {
@@ -465,22 +487,45 @@
     
     .expert-it-description {
         font-size: 1rem;
-        text-align: left;
+        text-align: center;
+    }
+    
+    .intro-content,
+    .zoho-solutions-content {
+        gap: 30px;
     }
     
     .intro-text .section-title,
+    .zoho-solutions-text .section-title,
     .why-choose-section .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
-    .intro-text .section-description {
+    .intro-text .section-description,
+    .zoho-solutions-text .section-description {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
+    .home-page .stats-section {
+        padding: 40px 0;
+    }
+    
     .home-page .stats-section .stats-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 12px;
+    }
+    
+    .home-page .stats-section .stat-card {
+        padding: 24px 12px;
+    }
+    
+    .home-page .stats-section .stat-card .stat-number {
+        font-size: 2rem;
+    }
+    
+    .home-page .stats-section .stat-card .stat-label {
+        font-size: 0.75rem;
     }
 }

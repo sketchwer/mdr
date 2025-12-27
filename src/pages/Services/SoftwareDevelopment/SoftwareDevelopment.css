@@ -62,14 +62,14 @@
 }
 
 .hero-title {
-    font-size: clamp(3.5rem, 8vw, 6rem);
+    font-size: clamp(5rem, 9vw, 7rem);
     font-weight: 900;
     background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 32px;
-    line-height: 1.05;
+    line-height: 1.1;
     animation: fadeInUp 0.8s ease-out 0.1s both;
     letter-spacing: -0.03em;
     text-align: left;
@@ -169,7 +169,10 @@
 .section-title {
     font-size: clamp(2.25rem, 5vw, 3.5rem);
     font-weight: 900;
-    color: #1a1a1a;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 16px;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -296,13 +299,19 @@
     flex: 1;
     transition: all 0.3s ease;
     letter-spacing: -0.02em;
-    color: #1a1a1a;
+    background: linear-gradient(135deg, #000000, #000000 25%, #000000 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     position: relative;
     z-index: 2;
 }
 
 .service-content-card:hover .service-card-title {
-    color: #771313;
+    background: linear-gradient(135deg, #771313, #771313 25%, #771313 50%, #ff6b35 75%, #ff8c42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .service-arrow-icon {

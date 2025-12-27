@@ -19,7 +19,7 @@ const About = () => {
                 <div className="container">
                     <div className="about-hero-content">
                         <h1 className="about-hero-title">
-                            Turning ideas into measurable results since 2005
+                            Turning ideas into measurable results since 2016
                         </h1>
                         <p className="about-hero-description">
                             Our solutions help organizations modernize operations and scale confidently—with results you can measure.
@@ -216,8 +216,7 @@ const About = () => {
             {/* Our Track Record Section */}
             <section className="about-track-record">
                 <div className="container">
-                    <span className="section-label">Our track record </span>
-                    <h2 className="section-heading">Proven where it counts</h2>
+                    <span className="section-label center">Our track record </span>
                     <div className="track-record-grid">
                         {trackRecord.map((stat, index) => (
                             <div key={index} className="track-record-item">

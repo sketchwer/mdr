@@ -139,8 +139,8 @@ const Home = () => {
                                     <polyline points="22 4 12 14.01 9 11.01"/>
                                 </svg>
                             </div>
-                            <h3>Globally Certified</h3>
-                            <p>50+ Achievements in excellence</p>
+                            <h3>Zoho Authorized Partner & Certified</h3>
+                            <p>Official Zoho certifications across multiple Zoho products</p>
                         </div>
                     </div>
                 </div>

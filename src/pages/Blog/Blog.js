@@ -9,21 +9,24 @@ const Blog = () => {
             date: "September 11, 2025",
             category: "AI For Business Transformation",
             excerpt: "Implementing Zoho CRM can be a game-changer for businesses aiming to streamline customer interactions, improve efficiency, and boost sales. However, deploying a CRM system without proper planning and execution can lead to confusion, wasted resources, and unmet expectations. In 2025, with more businesses relying on digital solutions, ensuring a seamless Zoho CRM deployment is critical.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            slug: "zoho-crm-deployment-2025"
         },
         {
             title: "From Creation to Execution: Exploring the Zoho AI Agent Ecosystem",
             date: "August 13, 2025",
             category: "AI For Business Transformation",
             excerpt: "In today's fast-paced digital world, automation and artificial intelligence (AI) are no longer optional — they are essential for efficiency, accuracy, and growth. Zoho, known for its powerful business software suite, has taken a giant leap forward with Zoho AI Agents. These intelligent virtual agents are designed to help businesses create, deploy, and manage AI-driven solutions.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            slug: "zoho-ai-agent-ecosystem"
         },
         {
             title: "A Complete Guide to Zoho AI Agents: Features, Benefits, and Use Cases",
             date: "August 12, 2025",
             category: "AI For Business Transformation",
             excerpt: "Artificial Intelligence (AI) is transforming how businesses operate, and Zoho has taken a significant step forward with its Zoho AI Agents. Designed to streamline workflows, enhance customer experiences, and improve productivity, these AI-driven assistants are becoming a must-have for businesses of all sizes. Whether you are a sales team, support desk, or marketing department, Zoho AI Agents can revolutionize your operations.",
-            image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+            image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+            slug: "complete-guide-zoho-ai-agents"
         }
     ];
 
@@ -49,7 +52,6 @@ const Blog = () => {
                                     </div>
                                     <h3 className="blog-title">{post.title}</h3>
                                     <p className="blog-excerpt">{post.excerpt}</p>
-                                    <a href={`/blog/post-${index + 1}`} className="blog-read-more">Continue Reading →</a>
                                 </div>
                             </article>
                         ))}

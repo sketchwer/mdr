@@ -564,7 +564,7 @@
 
 .tech-badge-industry {
     padding: 12px 24px;
-    background: rgb(158, 42, 42);
+    background: linear-gradient(135deg, #1a1a1a 0%, #334155 100%);
     color: white;
     border-radius: 30px;
     font-weight: 600;
@@ -575,6 +575,7 @@
 
 .tech-badge-industry:hover {
     transform: scale(1.05);
+    background: linear-gradient(135deg, #334155 0%, #1a1a1a 100%);
 }
 
 /* FAQ Section */

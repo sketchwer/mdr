@@ -33,6 +33,7 @@ const Footer = () => {
                             <li><Link to="/case-studies">Case Studies</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/about">Partners & Certificates</Link></li>
+                            <li><Link to="/contact">Contact Us</Link></li>
                         </ul>
                     </div>
                     
@@ -82,8 +83,8 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>©Copyright 2025 - 2026  |  All rights reserved </p>
                     <p style={{marginTop: '10px'}}>
-                        <a href="#terms" style={{color: 'rgba(255, 255, 255, 0.6)', textDecoration: 'none', marginRight: '20px'}}>Terms & Conditions</a>
-                
+                        {/* <a href="#terms" style={{color: 'rgba(255, 255, 255, 0.6)', textDecoration: 'none', marginRight: '20px'}}>Terms & Conditions</a>
+                 */}
                     </p>
                 </div>
             </div>

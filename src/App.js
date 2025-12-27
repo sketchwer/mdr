@@ -10,6 +10,9 @@ import IndustriesPage from './pages/Industries/Industries';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Blog from './pages/Blog/Blog';
+import BlogPost1 from './pages/Blog/BlogPost1/BlogPost1';
+import BlogPost2 from './pages/Blog/BlogPost2/BlogPost2';
+import BlogPost3 from './pages/Blog/BlogPost3/BlogPost3';
 import Careers from './pages/Careers/Careers';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import RequestQuote from './pages/RequestQuote/RequestQuote';
@@ -289,6 +292,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/zoho-crm-deployment-2025" element={<BlogPost1 />} />
+          <Route path="/blog/zoho-ai-agent-ecosystem" element={<BlogPost2 />} />
+          <Route path="/blog/complete-guide-zoho-ai-agents" element={<BlogPost3 />} />
           <Route path="/careers" element={<Careers />} />
         </Routes>
         <Footer />
