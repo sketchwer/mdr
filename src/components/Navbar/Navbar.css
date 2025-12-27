@@ -201,7 +201,7 @@
     object-fit: contain;
     transition: all 0.3s ease;
     display: block;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -210,7 +210,9 @@
     }
     
     .image {
-        display: none !important;
+        width: 120px;
+        height: 60px;
+        margin-left: 8px;
     }
 }
 
@@ -1188,7 +1190,9 @@
     }
     
     .image {
-        display: none !important;
+        width: 100px;
+        height: 55px;
+        margin-left: 6px;
     }
     
     .logo-image {
@@ -1203,7 +1207,6 @@
     }
     
     .logo {
-        order: 1;
         margin-right: auto;
     }
     
@@ -1258,7 +1261,9 @@
     }
     
     .image {
-        display: none !important;
+        width: 90px;
+        height: 50px;
+        margin-left: 4px;
     }
     
     .nav-menu {
@@ -1313,7 +1318,6 @@
     }
     
     .logo {
-        order: 1;
         margin-right: auto;
     }
     
@@ -1383,10 +1387,10 @@
         display: none;
     }
 }
-
+    
 @media (max-width: 480px) {
     .logo-image {
-        height: 45px;
+        height: 85px;
     }
     
     .contact-info {
