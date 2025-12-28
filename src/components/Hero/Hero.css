@@ -15,7 +15,7 @@
 .hero-container {
   width: 100%;
   max-width: 1600px;
-  margin: 30px auto;
+  margin: 45px auto;
   padding: 0 80px;
   box-sizing: border-box;
   }
@@ -60,6 +60,13 @@
   font-weight: 400;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
 .hero-cta-btn {
   background: linear-gradient(135deg, #1a1a1a 0%, #334155 100%);
   color: #ffffff;
@@ -79,6 +86,25 @@
   letter-spacing: 0.03em;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+}
+
+.hero-cta-btn-secondary {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero-cta-btn-secondary:hover {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-color: #771313;
+  color: #771313;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .hero-cta-btn::before {

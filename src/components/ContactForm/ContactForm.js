@@ -24,8 +24,9 @@ const ContactForm = () => {
         setIsSubmitting(true);
 
         try {
-            // Send email using backend API endpoint
-            const response = await fetch('http://localhost:5000/api/send-email', {
+            // Send email using PHP API endpoint (webmail SMTP)
+            const apiUrl = '/api/send-email.php';
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,10 +41,25 @@ const ContactForm = () => {
                 })
             });
 
+            // Check if response is JSON before parsing
+            const contentType = response.headers.get('content-type');
+            if (!contentType || !contentType.includes('application/json')) {
+                const text = await response.text();
+                console.error('Non-JSON response:', text);
+                throw new Error('Server returned an invalid response.');
+            }
+
             const data = await response.json();
 
             if (!response.ok) {
                 console.error('API Error:', data);
+                console.error('Error Details:', data.details);
+                console.error('Debug Info:', data.debug_info);
+                console.error('SMTP Config:', {
+                    host: data.smtp_host,
+                    port: data.smtp_port,
+                    username: data.smtp_username
+                });
                 throw new Error(data.error || 'Failed to send email');
             }
 
@@ -57,9 +73,9 @@ const ContactForm = () => {
                 message: ''
             });
         } catch (error) {
-            console.error('Resend Error:', error);
+            console.error('Email Error:', error);
             const errorMessage = error.message || 'Unknown error occurred';
-            alert(`There was an error sending your message: ${errorMessage}. Please try again or contact us directly at support@macroencoder.com`);
+            alert(`There was an error sending your message: ${errorMessage}. Please try again or contact us directly at Info@macroencoder.com`);
         } finally {
             setIsSubmitting(false);
         }

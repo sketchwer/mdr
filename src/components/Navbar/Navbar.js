@@ -28,19 +28,27 @@ const Navbar = () => {
         return location.pathname === path;
     };
 
-    const toggleDropdown = (dropdownName) => {
+    const toggleDropdown = (e, dropdownName) => {
+        e.preventDefault();
+        e.stopPropagation();
         setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
     };
 
     const handleMouseEnter = (dropdownName) => {
-        setActiveDropdown(dropdownName);
+        // Only use mouse events on desktop (screen width > 1024px)
+        if (window.innerWidth > 1024) {
+            setActiveDropdown(dropdownName);
+        }
     };
 
     const handleMouseLeave = () => {
-        // Small delay to allow moving to dropdown
-        setTimeout(() => {
-            setActiveDropdown(null);
-        }, 200);
+        // Only use mouse events on desktop (screen width > 1024px)
+        if (window.innerWidth > 1024) {
+            // Small delay to allow moving to dropdown
+            setTimeout(() => {
+                setActiveDropdown(null);
+            }, 200);
+        }
     };
 
     return (
@@ -67,7 +75,7 @@ const Navbar = () => {
                             >
                                 <div 
                                     className={`nav-link-dropdown ${isActive('/services') ? 'active' : ''}`}
-                                    onClick={() => toggleDropdown('services')}
+                                    onClick={(e) => toggleDropdown(e, 'services')}
                                 >
                                     <span className="nav-link-text">SERVICES</span>
                                     <svg className="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -79,6 +87,7 @@ const Navbar = () => {
                                     className={`services-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
                                     onMouseEnter={() => handleMouseEnter('services')}
                                     onMouseLeave={handleMouseLeave}
+                                    onClick={(e) => e.stopPropagation()}
                                 >
                                     <div className="dropdown-simple-menu">
                                         <Link to="/services/zoho-solutions" className="dropdown-menu-item">
@@ -109,7 +118,7 @@ const Navbar = () => {
                             >
                                 <div 
                                     className={`nav-link-dropdown ${isActive('/industries') ? 'active' : ''}`}
-                                    onClick={() => toggleDropdown('industries')}
+                                    onClick={(e) => toggleDropdown(e, 'industries')}
                                 >
                                     <span className="nav-link-text">INDUSTRIES</span>
                                     <svg className="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -121,6 +130,7 @@ const Navbar = () => {
                                     className={`industries-dropdown ${activeDropdown === 'industries' ? 'active' : ''}`}
                                     onMouseEnter={() => handleMouseEnter('industries')}
                                     onMouseLeave={handleMouseLeave}
+                                    onClick={(e) => e.stopPropagation()}
                                 >
                                     <div className="dropdown-content">
                                         <div className="dropdown-section">
@@ -171,12 +181,12 @@ const Navbar = () => {
                                     <div className="nav-link-underline"></div>
                                 </Link>
                             </li>
-                            {/* <li>
+                            <li className="mobile-contact-us">
                                 <Link to="/contact" className={isActive('/contact') ? 'active' : ''}>
-                                    <span className="nav-link-text">BOOK A CALL</span>
+                                    <span className="nav-link-text">CONTACT US</span>
                                     <div className="nav-link-underline"></div>
                                 </Link>
-                            </li> */}
+                            </li>
                         </ul>
 <img
     src="/zoho.png"
@@ -186,8 +196,8 @@ const Navbar = () => {
                         <div className="contact-button-wrapper">
 
 
-                            <Link to="/contact" className="contact-us-button">
-                                CONTACT US
+                            <Link to="/request-quote" className="contact-us-button">
+                                REQUEST QUOTE
                             </Link>
                         </div>
                         <button className={`nav-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>

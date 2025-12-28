@@ -121,11 +121,18 @@ const Hero = () => {
             </p>
 
 
-<Link to="/request-quote">
-  <button className="hero-cta-btn">
-    Contact with our team
-  </button>
-</Link>
+<div className="hero-buttons">
+  <Link to="/contact">
+    <button className="hero-cta-btn">
+      Contact with our team
+    </button>
+  </Link>
+  <Link to="/contact">
+    <button className="hero-cta-btn hero-cta-btn-secondary">
+      Contact Us
+    </button>
+  </Link>
+</div>
 
           </div>
 
